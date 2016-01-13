@@ -2550,8 +2550,11 @@ output {
 }
 .form-control {
   display: block;
-  width: 100%;
   height: 34px;
+  position: relative;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-right: 12px;
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
@@ -3004,8 +3007,9 @@ select[multiple].input-lg {
 }
 .btn {
   display: inline-block;
+  position: relative;
   padding: 6px 12px;
-  margin-bottom: 0;
+  margin-bottom: 12px;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.42857143;
