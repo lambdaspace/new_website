@@ -6761,4 +6761,7 @@ button.close {
     display: none !important;
   }
 }
+.no-bottom-padding{
+  padding-bottom: 0;
+}
 /*# sourceMappingURL=bootstrap.css.map */
