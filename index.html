@@ -287,10 +287,44 @@
           </tbody>
         </table>
       </div>
-      <a href="#" class="btn btn-primary btn-xl tada">Make a donation</a>
+      <a href="#" class="btn btn-primary btn-xl tada" data-toggle="modal" data-target="#donate">Make a donation</a>
     </div>
   </aside>
 
+  <div class="modal fade" id="donate" tabindex="-1" role="dialog" aria-labelledby="donate">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Make a donation</h4>
+        </div>
+        <div class="modal-body text-left">
+          <ul>
+            <li>
+              <p>You can make a financial donation directly through paypal:</p>
+              <div class="text-center">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+              </form>
+            </div>
+            </li>
+            <br>
+            <li>
+              <p>For tools or equipment, please fill your contact details in the relevant form and we will get back to you with further details</p>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal" href="#contact">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <section id="contact">
     <div class="container">
       <div class="row">
