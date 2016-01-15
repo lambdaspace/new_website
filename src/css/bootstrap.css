@@ -5788,4 +5788,11 @@ button.close {
   margin: 12px 0;
 }
 
+#budget-desc{
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+#budget-head{
+  margin-bottom: 18px;
+}
 /*# sourceMappingURL=bootstrap.css.map */
