@@ -5803,4 +5803,13 @@ button.close {
 #budget-head{
   margin-bottom: 18px;
 }
+
+#footer{
+  padding-top: 30px;
+}
+
+.footer{
+  background-color: #222;
+  color: #fff;
+}
 /*# sourceMappingURL=bootstrap.css.map */
