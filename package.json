@@ -1,0 +1,30 @@
+{
+  "name": "new_website",
+  "version": "0.0.0",
+  "description": "New landing page for Thessaloniki's hackerspace",
+  "main": "index.html",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-cssmin": "~0.14.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-cssmin": "0.6.1",
+    "grunt-contrib-imagemin": "~1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alexdor/new_website.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexdor/new_website/issues"
+  }
+}
