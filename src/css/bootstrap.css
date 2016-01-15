@@ -6,6 +6,10 @@
 
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+.progress.active .progress-bar {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
 
 html {
   font-family: sans-serif;

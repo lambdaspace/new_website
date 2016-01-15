@@ -20,7 +20,7 @@
     $('body').scrollspy({
         target: '.navbar-fixed-top',
         offset: 51
-    })
+    });
 
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a').click(function() {
@@ -40,9 +40,24 @@
         offset: {
             top: 100
         }
-    })
+    });
 
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
 
 })(jQuery); // End of use strict
+
+value = false;
+function draw_bar(){
+  if ($('.progress-bar').visible() && value == false) {
+    $(".progress-bar").animate({
+      width: "10%"
+    }, 2500);
+    value = true;
+  }
+}
+
+draw_bar();
+$(window).scroll(function() {
+  draw_bar();
+});
