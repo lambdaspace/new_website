@@ -97,6 +97,14 @@ button, input, optgroup, select, textarea {
 button {
   overflow: visible;
 }
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(238, 75, 40, 0.4);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(238, 75, 40, 0.4);
+  outline: 0 none;
+}
 button, select {
   text-transform: none;
 }
