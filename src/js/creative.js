@@ -61,3 +61,7 @@ draw_bar();
 $(window).scroll(function() {
   draw_bar();
 });
+
+$('.directions').click(function() {
+  window.location = "http://bit.ly/1O4hnu4";
+});
