@@ -337,10 +337,31 @@
         <div class="col-md-12 text-center">
           <h2 class="section-heading">Be part of it!</h2>
           <hr class="primary">
-          <div id="mc_embed_signup_scroll">
-            <input placeholder="Enter your full name..." value="" name="MERGE1" class="col-md-4 col-xs-12 col-md-push-1 required form-control type1" id="mce-NAME" type="text">
-            <input placeholder="Enter your email..." value="" name="EMAIL" class="col-md-4 col-md-push-1 col-xs-12 required form-control type2" id="mce-EMAIL" type="email">
-            <button class="btn btn-success col-md-1 col-md-push-1 col-xs-4 col-xs-push-4" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" data-complete-text="Woot!" data-loading-text="...">Go</button>
+          <div id="mauticform_wrapper_bepartofit" class="mauticform_wrapper">
+            <form autocomplete="false" role="form" method="post" action="https://techministry.mautic.com/form/submit?formId=1" id="mauticform_bepartofit" data-mautic-form="bepartofit">
+              <div class="mauticform-error" id="mauticform_bepartofit_error"></div>
+              <p><div class="mauticform-message text-muted" id="mauticform_bepartofit_message">Sign up today!</div>
+              <div class="mauticform-innerform">
+
+                <div id="mauticform_bepartofit_name" class="mauticform-row mauticform-text">
+                  <input id="mauticform_input_bepartofit_name" placeholder="Enter your full name..." name="mauticform[name]" value="" class="col-md-4 col-xs-12 col-md-push-1 required form-control type1" type="text" />
+                  <span class="mauticform-errormsg" style="display: none;"></span>
+                </div>
+
+                <div id="mauticform_bepartofit_email" data-validate="email" data-validation-type="email" class="mauticform-row mauticform-email mauticform-required">
+                  <input id="mauticform_input_bepartofit_email" placeholder="Enter your email address..." name="mauticform[email]" value="" class="col-md-4 col-md-push-1 col-xs-12 required form-control type2" type="email" />
+                </div>
+
+                <div id="mauticform_bepartofit_submit" class="mauticform-row mauticform-button-wrapper">
+                  <button type="submit" name="mauticform[submit]" id="mauticform_input_bepartofit_submit" name="mauticform[submit]" value="" class="btn btn-success col-md-1 col-md-push-1 col-xs-4 col-xs-push-4" value="1">Submit</button>
+                </div>
+
+                <input type="hidden" name="mauticform[formId]" id="mauticform_bepartofit_id" value="1" />
+                <input type="hidden" name="mauticform[return]" id="mauticform_bepartofit_return" value="" />
+                <input type="hidden" name="mauticform[formName]" id="mauticform_bepartofit_name" value="bepartofit" />
+
+              </div>
+            </form>
           </div>
         </div>
       </div>
