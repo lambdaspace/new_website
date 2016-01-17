@@ -5838,4 +5838,9 @@ button.close {
   background-color: #222;
   color: #fff;
 }
+
+#status{
+  margin-left: -6px;
+  padding-left: 0;
+}
 /*# sourceMappingURL=bootstrap.css.map */
