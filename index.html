@@ -391,12 +391,86 @@
     <div class="container" id="footer">
       <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" class="col-md-4 text-muted">Creative Commons Attribution-ShareAlike</a>
       <div class="col-md-4 col-md-push-4">
-        <p class="col-md-4"><a class="text-muted" href="#">Our values </a></p>
-        <p class="col-md-2"><a class="text-muted" href="#">FAQ </a></p>
+        <p class="col-md-4"><a class="text-muted" data-toggle="modal" data-target="#values">Our values </a></p>
+        <p class="col-md-2"><a class="text-muted" data-toggle="modal" data-target="#faq">FAQ </a></p>
         <p class="col-md-6"><a class="text-muted" href="#">Source Code </a></p>
       </div>
     </div>
   </footer>
+
+
+  <!-- Our values Modal dialogs -->
+  <div class="modal fade" id="values" tabindex="-1" role="dialog" aria-labelledby="values">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Our Values</h4>
+        </div>
+        <div class="modal-body text-left">
+          <p>A hackerspace is a place for creativity, collaboration, research, development and, of course, education. It is more than just a physical space: It is a dynamic community with ideas inspired by the Open Source philosophy.</p>
+          <h3>The Idea</h3>
+          <p>While our idea stems from free and Open Source ideas, our primary motivation is our desire to share our experiences with the rest of the world.</p>
+          <p>We want to share our ideas just as we share our code. We are used in sharing our data, problems and solutions remotely from our home or from our jobs. So, why not do it face to face as well?</p>
+          <h3>Values</h3>
+          <h4>Excellence</h4>
+          <p>Be polite to everyone. Respect all people that you meet at the space, as well as the space itself.</p>
+          <h4>Sharing</h4>
+          <p>The main operation of hackerspace is to promote collaboration by sharing projects, code, and ideas. The motto, which is inspired by Creative Commons, is "I love to share".</p>
+          <h4>Consensus</h4>
+          <p>All decisions are the result of consensus among members. Decisions on management of the space are taken at the monthly meetings, which are open to all.</p>
+          <h4>Do-ocracy</h4>
+          <p>You do not need a license to work on a project. If you want to organize an event or a workshop on an Open-Source or Open-Hardware project, do not expect it to be organized by someone else. Take the initiative and do it!</p>
+          <h3>Financing</h3>
+          <p>The hackerspace is self-funded, with funds provided mostly from its Members. If you want to contribute, you can make a Contribution. All financial information is posted on the notice board inside the space.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal" href="#contact">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ Modal dialogs -->
+  <div class="modal fade" id="faq" tabindex="-1" role="dialog" aria-labelledby="faq">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">FAQ</h4>
+        </div>
+        <div class="modal-body text-left">
+          <h4>Visiting the hackerspace?</h4>
+          <p>All presentations and activities that take place in the hackerspace are open to the public. Apart from these occasions, the hackerspace is also open when there is at least one member in the space. You can also be advised if the space is open from the live-status indicator on the top of our page</p>
+          <p>Visitors are welcome to make use of the kitchen, the living room area and the working area, as long as the space is open. The presentation area, the laboratory, as well as any equipment belonging to the hackerspace, can only be accessed and used by the members of the hackerspace.</p>
+          <h4>Who is funding the hackerspace?</h4>
+          <p>The hackerspace relies exclusively on memberships and financial contributions of friends (non-members). All financial information are published in detail on our website. </p>
+          <h4>Why becoming a member?</h4>
+          <p>As a member you have free access to the space 24 hours a day and 7 days a week. You are free to use whatever the space provides (equipment, tools, consumables).</p>
+          <p>You have the right to organize a presentation or start a project anytime, as long as it does not contradict the principles, objectives, and safety requirements of the hackerspace.</p>
+          <p>Anyone can become a member of the hackerspace and be part of this amazing space/community by simply following the "become a member button" on our website.</p>
+          <h4>Want to run a presenation/workshop but you are not a member?</h4>
+          <p>If you wish to organize a presentation or activity you should first contact a member of the hackerspace. As mentioned before, the hackerspace depends solely on memberships and donations; therefore, each activity organized by a friend should help us cover a percentage of the monthly expenses of the hackerspace, either through financial donations or by consuming snacks, soft drinks, coffee, etc. that are provided by the hackerspace. </p>
+          <h4>What the space can feature?</h4>
+            <ul>
+              <li>A full equipted presentation space with a capacity of 60 seated people.</li>
+              <li>Workspaces: 35 individual workspaces, 2 workbenches for heavier work</li>
+              <li>Fully equipped workshop/lab with three workbenches, a 3D printer, a drill, 6x Arduino boards, electronic parts (sensors, motors etc), 2x Raspberry Pi, 2x Banani Pi, 8x LCD TFT monitors, networking equipment and more.</li>
+              <li>Fully equipped kitchen</li>
+              <li>Coffee, snacks, and refreshments</li>
+              <li>Exchange library with over 50 titles</li>
+            </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal" href="#contact">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- jQuery -->
   <script src="src/js/jquery.js"></script>
