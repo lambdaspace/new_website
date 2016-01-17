@@ -149,32 +149,6 @@
         <p>Check some of the upcoming events, workshops and projects.</p>
         <div class="row">
         <div class="col-md-6 col-md-offset-3">
-        <table id="upcoming_events" class="table table-condensed text-left">
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Category</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>20/01/2016</td>
-              <td>Event</td>
-              <td>TechMinistry new year's party</td>
-            </tr>
-            <tr>
-              <td>21/01/2016</td>
-              <td>Presentation</td>
-              <td>NodeJS meetup: All about security and error handling</td>
-            </tr>
-            <tr>
-              <td>30/01/2016</td>
-              <td>Workshop</td>
-              <td>Introduction to WebVR</td>
-            </tr>
-          </tbody>
-        </table>
       </div>
     </div>
         <a class="btn btn-primary btn-lg btn-default page-scroll" href="#portfolio">
@@ -189,14 +163,34 @@
         <div class="col-lg-4 col-sm-6">
           <a href="http://discourse.techministry.gr/c/events" class="portfolio-box">
             <img src="dist/img/portfolio/1.jpg" class="img-responsive" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  Upcoming Events
-                </div>
-                <div class="project-name">
-                  NodeJS meetup at 28/1
-                </div>
+            <div id="upcoming_events" class="portfolio-box-caption">
+              <div id="events_table" class="portfolio-box-caption-content project-category text-faded">
+                  <table class="table table-condensed">
+                    <thead>
+                      <tr>
+                        <th>Date</th>
+                        <th>Category</th>
+                        <th>Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>20/01/2016</td>
+                        <td>Event</td>
+                        <td>TechMinistry new year's party</td>
+                      </tr>
+                      <tr>
+                        <td>21/01/2016</td>
+                        <td>Presentation</td>
+                        <td>NodeJS meetup: All about security and error handling</td>
+                      </tr>
+                      <tr>
+                        <td>30/01/2016</td>
+                        <td>Workshop</td>
+                        <td>Introduction to WebVR</td>
+                      </tr>
+                    </tbody>
+                  </table>
               </div>
             </div>
           </a>
@@ -298,7 +292,7 @@
       </div>
       <div class="col-lg-5 col-lg-push-2">
         <p>Top three supporters</p>
-        <table class="table table-condensed text-left">
+        <table class="table table-condensed">
           <thead>
             <tr>
               <th>Name</th>

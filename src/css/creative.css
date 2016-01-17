@@ -335,3 +335,36 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222;
 }
+
+#upcoming_events{
+  opacity: 1;
+  color: #222;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(34, 34, 34, .9);
+}
+
+#events_table{
+  display: block;
+  position: absolute;
+  padding: 0 8px;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1em;
+  text-transform: capitalize;
+  text-align: center;
+
+}
+
+#events_table > table{
+  margin: 4px 0;
+}
+
+#events_table > table > thead > tr > th{
+  text-align: center;
+  font-size: 1em;
+  text-transform: capitalize;
+}
