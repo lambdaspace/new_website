@@ -65,3 +65,17 @@ $(window).scroll(function() {
 $('.directions').click(function() {
   window.location = "http://bit.ly/1O4hnu4";
 });
+
+// Add space status
+$.get('hackers.txt',function (data){
+      hackers = parseInt(data);
+      if(isNaN(hackers)){
+        text="";
+        console.log("There was an error with hackers.txt");
+      }else if(hackers>0){
+        text="is Open!";
+      }else{
+        text="is Closed";
+      }
+      document.getElementById("status").textContent=text;
+    });
