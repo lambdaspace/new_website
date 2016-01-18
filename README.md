@@ -22,7 +22,7 @@ We have also deployed our own instance of the open source discussion platfom Dis
 Anyone is welcome to contribute to the development and enhancement of the TM website. 
 In order to contribute, you are advised to follow these steps: 
 
-**Requirements**: node.js, npm, grunt
+**Prerequisites**: Node.js, npm, Grunt
 
 ### Preparing your development environment
 
