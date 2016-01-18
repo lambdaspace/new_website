@@ -34,7 +34,7 @@ This will put the `grunt` command in your system path, allowing it to be run fro
 
 A typical Grunt project setup will involve adding two files to your project: `package.json` and the `Gruntfile`
 
-**package.json**: The `package.json` file belongs in the root directory of your project, and should be commited with your project source. Running `$ npm install` in the same folder as a `package.json` file will install the correct version of each dependency listed therein.
+**package.json**: The `package.json` file belongs in the root directory of your project, and should be commited with your project source. Running `npm install` in the same folder as a `package.json` file will install the correct version of each dependency listed therein.
 
 **Gruntfile**: The `Gruntfile.js` file is a valid JS file that also belongs in the root directory of your project, next to your `package.json` file, and should be commited with your project source.
 
@@ -45,8 +45,8 @@ A typical Grunt project setup will involve adding two files to your project: `pa
 This project is *already* configured with a `package.json` and a `Gruntfile`, so assuming that the Grunt CLI has been installed successfully:
 
 * Open your terminal and navigate to the project's folder.
-* Run `$ npm install` to install project dependencies.
+* Run `npm install` to install project dependencies.
  
-**Before making any changes run `$ grunt` on your terminal**.
+**Before making any changes run `grunt` on your terminal**.
 
 
