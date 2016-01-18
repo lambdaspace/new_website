@@ -4,13 +4,11 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 .progress.active .progress-bar {
     -webkit-transition: none !important;
     transition: none !important;
 }
-
 .mauticform_wrapper {}
 .mauticform-innerform {}
 .mauticform-post-success {}
@@ -55,8 +53,8 @@ audio:not([controls]) {
 a {
   background-color: transparent;
 }
-a:active, a:hover {
-  outline: 0;
+a:active, a:hover, a:focus {
+  outline: none !important;
 }
 abbr[title] {
   border-bottom: 1px dotted;
@@ -120,7 +118,6 @@ button, input, optgroup, select, textarea {
 button {
   overflow: visible;
 }
-
 input[type="text"]:focus,
 input[type="email"]:focus,
 .uneditable-input:focus {
@@ -189,7 +186,6 @@ td, th {
   font-color: white;
 }
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
-
 @media print {
   *, *:before, *:after {
     color: #000 !important;
@@ -2690,8 +2686,8 @@ textarea.input-lg, select[multiple].input-lg {
   border-radius: 4px;
 }
 .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
-  outline: none;
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: none!important;
+  outline-style: none;
   outline-offset: -2px;
 }
 .btn:hover, .btn:focus, .btn.focus {
@@ -5026,7 +5022,6 @@ button.close {
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
   outline: 0;
-
 }
 .modal.fade .modal-dialog {
   -webkit-transition: -webkit-transform .3s ease-out;
@@ -5043,9 +5038,11 @@ button.close {
   -o-transform: translate(0, 0);
   transform: translate(0, 0);
 }
-.modal-open .modal {
-  overflow-x: hidden;
-  overflow-y: auto;
+.modal-open .modal,.btn:focus{
+    outline: none!important;
+    outline-style: none;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 .modal-dialog {
   position: relative;
@@ -5820,11 +5817,9 @@ button.close {
 .no-bottom-padding {
   padding-bottom: 0;
 }
-
 #mauticform_input_bepartofit_submit{
   margin: 12px 0;
 }
-
 #budget-desc{
   font-size: 14px;
   margin-bottom: 14px;
@@ -5832,22 +5827,18 @@ button.close {
 #budget-head{
   margin-bottom: 18px;
 }
-
 #footer{
   padding-top: 30px;
 }
-
 .footer{
   background-color: #222;
   color: #fff;
 }
-
 #status{
   margin-left: -6px;
   padding-left: 0;
   padding-right: 0;
 }
-
 #creative-commons{
   margin-bottom: 16px;
 }
