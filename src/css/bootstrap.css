@@ -5094,7 +5094,7 @@ button.close {
   padding: 15px;
 }
 .modal-body > p {
-  font-size: small;
+  font-size: inherit;
 }
 .modal-footer {
   padding: 15px;
