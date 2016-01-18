@@ -27,6 +27,8 @@ Keep in mind that in order to make changes in the website's CSS, js, and images,
 
 ### Preparing your development environment
 
+[![Code Climate](https://codeclimate.com/github/techministry/new_website/badges/gpa.svg)](https://codeclimate.com/github/techministry/new_website)
+
 Grunt is installed and managed via [npm](https://www.npmjs.com/), the [Node.js](https://nodejs.org/en/) package mananger. 
 Before setting up Grunt make sure that your [npm](https://www.npmjs.com/) is up-to-date by running `npm update -g npm`. Τhis might require `sudo` on certain systems.
 
