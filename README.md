@@ -13,7 +13,7 @@ The space is maintained thanks to the contributions of our (awesome) members and
 
 The TM website was redesigned in order to increase the visibilty of the hackerspace, as well as to more effectively promote the events and projects that take place on a daily basis at the hackerspace. 
 
-We used [Creative]((http://ironsummitmedia.github.io/startbootstrap-creative/), a template based on the [Bootstrap](http://getbootstrap.com/) front-end framework for modern and mobile responsive web projects.
+We used [Creative](http://ironsummitmedia.github.io/startbootstrap-creative/), a template based on the [Bootstrap](http://getbootstrap.com/) front-end framework for modern and mobile responsive web projects.
 
 We have also deployed our own instance of the open source discussion platfom Discource, available [here](http://discourse.techministry.gr/).
 
