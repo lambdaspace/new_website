@@ -185,7 +185,9 @@ table {
 td, th {
   padding: 0;
 }
-
+.header_text {
+  font-color: white;
+}
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 
 @media print {
