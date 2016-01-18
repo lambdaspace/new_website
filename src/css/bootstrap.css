@@ -5842,6 +5842,7 @@ button.close {
 #status{
   margin-left: -6px;
   padding-left: 0;
+  padding-right: 0;
 }
 
 #creative-commons{
