@@ -20,12 +20,33 @@ We have also deployed our own instance of the open source discussion platfom Dis
 ## How to contribute
 
 Anyone is welcome to contribute to the development and enhancement of the TM website. 
-In order to contribute, you are advised to follow these steps below: 
+In order to contribute, you are advised to follow these steps: 
 
 **Requirements**: node.js, npm, grunt
 
-### Prepare your dev environment:
-* Open your terminal and navigate to the project's folder
-* Run `$ npm install`
+### Preparing your development environment
+
+Grunt is installed and managed via [npm](https://www.npmjs.com/), the [Node.js](https://nodejs.org/en/) package mananger. 
+Before setting up Grunt make sure that your [npm](https://www.npmjs.com/) is up-to-date by running `npm update -g npm`.
+
+Afterwards, install the Grunt command line interface (**CLI**) globally, by running `npm install -g grunt-cli`.
+This will put the `grunt` command in your system path, allowing it to be run from any directory.
+
+A typical Grunt project setup will involve adding two files to your project: `package.json` and the `Gruntfile`
+
+**package.json**: The `package.json` file belongs in the root directory of your project, and should be commited with your project source. Running `$ npm install` in the same folder as a `package.json` file will install the correct version of each dependency listed therein.
+
+**Gruntfile**: The `Gruntfile.js` file is a valid JS file that also belongs in the root directory of your project, next to your `package.json` file, and should be commited with your project source.
+
+*For further info and detailed directions see the Grunt [Getting Started guide] (http://gruntjs.com/getting-started)*.
+
+### Working with an existing Grunt project
+
+This project is *already* configured with a `package.json` and a `Gruntfile`, so assuming that the Grunt CLI has been installed successfully:
+
+* Open your terminal and navigate to the project's folder.
+* Run `$ npm install` to install project dependencies.
  
-**Before making any change run `$ grunt` on your terminal**
+**Before making any changes run `$ grunt` on your terminal**.
+
+
