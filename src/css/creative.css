@@ -335,7 +335,6 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222;
 }
-
 #upcoming_events{
   opacity: 1;
   color: #222;
@@ -347,7 +346,6 @@ body {
   text-align: center;
   background: rgba(34, 34, 34, .9);
 }
-
 #events_table{
   display: block;
   position: absolute;
@@ -356,13 +354,10 @@ body {
   font-size: 1em;
   text-transform: capitalize;
   text-align: center;
-
 }
-
 #events_table > table{
   margin: 4px 0;
 }
-
 #events_table > table > thead > tr > th{
   text-align: center;
   font-size: 1em;
