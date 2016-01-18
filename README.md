@@ -19,15 +19,16 @@ We have also deployed our own instance of the open source discussion platfom Dis
 
 ## How to contribute
 
-Anyone is welcome to contribute to the development and enhancement of the TM website. 
-In order to contribute, you are advised to follow these steps: 
+Anyone is welcome to contribute to the development and enhancement of the TM website.
+
+Keep in mind that in order to make changes in the website's CSS, js, and images, you will need to install **Grunt** first. If that is the case, you are advised to follow these steps: 
 
 **Prerequisites**: Node.js, npm, Grunt
 
 ### Preparing your development environment
 
 Grunt is installed and managed via [npm](https://www.npmjs.com/), the [Node.js](https://nodejs.org/en/) package mananger. 
-Before setting up Grunt make sure that your [npm](https://www.npmjs.com/) is up-to-date by running `npm update -g npm`.
+Before setting up Grunt make sure that your [npm](https://www.npmjs.com/) is up-to-date by running `npm update -g npm`. Τhis might require `sudo` on certain systems.
 
 Afterwards, install the Grunt command line interface (**CLI**) globally, by running `npm install -g grunt-cli`.
 This will put the `grunt` command in your system path, allowing it to be run from any directory.
