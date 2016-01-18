@@ -5094,7 +5094,7 @@ button.close {
   padding: 15px;
 }
 .modal-body > p {
-  font-size: small;
+  font-size: inherit;
 }
 .modal-footer {
   padding: 15px;
@@ -5841,5 +5841,14 @@ button.close {
 }
 #creative-commons{
   margin-bottom: 16px;
+}
+
+#page_top{
+    background: #222;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+#mauticform_label_memberssignupform_plhres_onoma{
+  margin-top: 20px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
