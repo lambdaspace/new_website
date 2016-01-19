@@ -5,10 +5,6 @@
  */
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-.progress.active .progress-bar {
-    -webkit-transition: none !important;
-    transition: none !important;
-}
 .mauticform_wrapper {}
 .mauticform-innerform {}
 .mauticform-post-success {}
@@ -5814,41 +5810,5 @@ button.close {
     display: none !important;
   }
 }
-.no-bottom-padding {
-  padding-bottom: 0;
-}
-#mauticform_input_bepartofit_submit{
-  margin: 12px 0;
-}
-#budget-desc{
-  font-size: 14px;
-  margin-bottom: 14px;
-}
-#budget-head{
-  margin-bottom: 18px;
-}
-#footer{
-  padding-top: 30px;
-}
-.footer{
-  background-color: #222;
-  color: #fff;
-}
-#status{
-  margin-left: -6px;
-  padding-left: 0;
-  padding-right: 0;
-}
-#creative-commons{
-  margin-bottom: 16px;
-}
 
-#page_top{
-    background: #222;
-    max-width: 100%;
-    overflow-x: hidden;
-}
-#mauticform_label_memberssignupform_plhres_onoma{
-  margin-top: 20px;
-}
 /*# sourceMappingURL=bootstrap.css.map */
