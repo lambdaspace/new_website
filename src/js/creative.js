@@ -98,5 +98,56 @@ if (typeof MauticSDKLoaded == 'undefined') {
     var MauticDomain = 'https://techministry.mautic.com';
     var MauticLang   = {
         'submittingMessage': "Please wait..."
-    }
+    };
 }
+
+// Parse events from discourse
+function eventParser(topic) {
+  var event = {};
+  var tokens = topic.split(' ');
+  event.day = tokens[0];
+  if (!event.day.match(/^\d\d\/\d\d\/\d\d\d\d+$/)) {
+    throw 'Not in expected format';
+  }
+  var dateTokens = tokens[0].split('/');
+  var eventDate = new Date(dateTokens[2], dateTokens[1] - 1, dateTokens[0], 23, 59);
+
+  event.date = eventDate;
+
+  if (tokens[1].match(/^\d\d:\d\d+$/)) {
+    event.time = tokens[1];
+    event.title = topic.substr(17);
+  } else {
+    event.time = "";
+    event.title = topic.substr(11);
+  }
+
+  return event;
+}
+
+// Populate the events table thread
+$.getJSON('latest.json', function(data){
+  var eventsTableThread = $('#eventsTableThread');
+  var futureEvents = new Array();
+
+  data.topic_list.topics.forEach(function(topic) {
+    var event;
+    try {
+      event = eventParser(topic.title);
+    } catch(e) {
+      return;
+    }
+    if (event.date > Date.now()) {
+      futureEvents.push(event);
+    }
+  });
+
+  futureEvents.sort(function(a,b) {
+    return a.date.getTime() - b.date.getTime();
+  });
+
+  for (var i = 0; i < 4 && i < futureEvents.length; i++) {
+    eventsTableThread.append('<tr><td>' + futureEvents[i].day + '</td><td>' + futureEvents[i].time +
+      '</td><td>' + futureEvents[i].title + '</td></tr>');
+  }
+});
