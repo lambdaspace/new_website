@@ -98,7 +98,7 @@ if (typeof MauticSDKLoaded == 'undefined') {
     var MauticDomain = 'https://techministry.mautic.com';
     var MauticLang   = {
         'submittingMessage': "Please wait..."
-    }
+    };
 }
 
 // Parse events from discourse
