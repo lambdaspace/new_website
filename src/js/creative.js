@@ -126,7 +126,7 @@ function eventParser(topic) {
 }
 
 // Populate the events table thread
-$.getJSON('http://discourse.techministry.gr/c/5/l/latest.json', function(data){
+$.getJSON('latest.json', function(data){
   var eventsTableThread = $('#eventsTableThread');
   var futureEvents = new Array();
 
