@@ -51,7 +51,7 @@ value = false;
 function draw_bar(){
   if ($('.progress-bar').visible() && value == false) {
     $(".progress-bar").animate({
-      width: "10%"
+      width: "26:%"
     }, 2500);
     value = true;
   }
