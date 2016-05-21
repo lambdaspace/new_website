@@ -74,11 +74,11 @@ $.get('hackers.txt',function (data){
         text="";
         console.log("There was an error with hackers.txt");
       }else if(hackers>0){
-        text="is Open!";
+        text="is current Open!";
         color="#5cb85c";
       }else{
-        text="is Closed";
-        color="#f05f40";
+        //text="is Closed";
+        //color="#f05f40";
       }
       document.getElementById("status").textContent=text;
       document.getElementById("status").style.color=color;
