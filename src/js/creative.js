@@ -49,10 +49,10 @@
 
 value = false;
 function draw_bar(){
-  if ($('.progress-bar').visible() && value == false) {
+  if ($('.progress-bar').visible() && value === false) {
     $(".progress-bar").animate({
-      width: "26:%"
-    }, 2500);
+      width: "37%"
+    }, 1500);
     value = true;
   }
 }
