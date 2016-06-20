@@ -407,3 +407,7 @@ body {
 #make{
   margin-bottom: 24px;
 }
+
+.clickable-row{
+  cursor: pointer;
+}
