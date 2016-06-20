@@ -169,3 +169,10 @@ $.getJSON('latest.json', function(data){
       '</td><td>' + futureEvents[i].title + '</td></tr>');
   }
 });
+
+// Display contact email
+(function(){
+  emailE='techministry.gr';
+  emailE=('members' + '@' + emailE);
+  document.getElementById("email").innerHTML = '<A href="mailto:' + emailE + '"target="_blank">' + emailE + '</a>';
+})();
