@@ -77,7 +77,7 @@ $(window).scroll(function() {
   draw_bar();
 });
 
-$('.directions').click(function() {
+$('#where').click(function() {
   window.location = "http://bit.ly/1O4hnu4";
 });
 

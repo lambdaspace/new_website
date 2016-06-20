@@ -411,3 +411,7 @@ body {
 .clickable-row{
   cursor: pointer;
 }
+
+#where{
+  cursor: pointer;
+}
