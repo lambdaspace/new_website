@@ -47,12 +47,27 @@
 
 })(jQuery); // End of use strict
 
+// Make class clickable-row act as an link
+  $(document.body).on('mousedown',".clickable-row", function(e){
+    switch(e.which)
+    {
+        case 1:
+           window.document.location = $(this).data("url"); //left click
+        break;
+        case 2:
+          window.open($(this).data("url")); //middle click
+        break;
+    }
+    return true;// to allow the browser to know that we handled it.
+  });
+
+
 value = false;
 function draw_bar(){
-  if ($('.progress-bar').visible() && value == false) {
+  if ($('.progress-bar').visible() && value === false) {
     $(".progress-bar").animate({
-      width: "26:%"
-    }, 2500);
+      width: "37%"
+    }, 1500);
     value = true;
   }
 }
@@ -62,7 +77,7 @@ $(window).scroll(function() {
   draw_bar();
 });
 
-$('.directions').click(function() {
+$('#where').click(function() {
   window.location = "http://bit.ly/1O4hnu4";
 });
 
@@ -128,12 +143,14 @@ function eventParser(topic) {
 // Populate the events table thread
 $.getJSON('latest.json', function(data){
   var eventsTableThread = $('#eventsTableThread');
-  var futureEvents = new Array();
+  var futureEvents = [];
 
   data.topic_list.topics.forEach(function(topic) {
     var event;
     try {
       event = eventParser(topic.title);
+      event.id = topic.id;
+      event.slug = topic.slug;
     } catch(e) {
       return;
     }
@@ -147,7 +164,15 @@ $.getJSON('latest.json', function(data){
   });
 
   for (var i = 0; i < 4 && i < futureEvents.length; i++) {
-    eventsTableThread.append('<tr><td>' + futureEvents[i].day + '</td><td>' + futureEvents[i].time +
+    futureEvents[i].link = 'https://discourse.techministry.gr/t/' + futureEvents[i].slug + '/' + futureEvents[i].id;
+    eventsTableThread.append('<tr class="clickable-row" data-url="' + futureEvents[i].link +  '"><td>' + futureEvents[i].day + '</td><td>' + futureEvents[i].time +
       '</td><td>' + futureEvents[i].title + '</td></tr>');
   }
 });
+
+// Display contact email
+(function(){
+  emailE='techministry.gr';
+  emailE=('members' + '@' + emailE);
+  document.getElementById("email").innerHTML = '<A href="mailto:' + emailE + '"target="_blank">' + emailE + '</a>';
+})();
