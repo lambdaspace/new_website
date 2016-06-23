@@ -78,7 +78,7 @@ $(window).scroll(function() {
 });
 
 $('#where').click(function() {
-  window.location = "http://bit.ly/1O4hnu4";
+  window.location = "https://goo.gl/maps/ALLuccDqMqo";
 });
 
 // Add space status
