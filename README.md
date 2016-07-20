@@ -1,4 +1,4 @@
-# [TechMinistry](http://www.techministry.gr/) - New website for Thessaloniki's Hackerspace
+# [TechMinistry](http://www.techministry.rocks/) - New website for Thessaloniki's Hackerspace
 
 ## What is the TechMinistry?
 
@@ -15,7 +15,7 @@ The TM website was redesigned in order to increase the visibilty of the hackersp
 
 We used [Creative](http://ironsummitmedia.github.io/startbootstrap-creative/), a template based on the [Bootstrap](http://getbootstrap.com/) front-end framework for modern and mobile responsive web projects.
 
-We have also deployed our own instance of the open source discussion platfom Discource, available [here](http://discourse.techministry.gr/).
+We have also deployed our own instance of the open source discussion platfom Discource, available [here](http://discourse.techministry.rocks/).
 
 ## How to contribute
 
