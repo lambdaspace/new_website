@@ -1,8 +1,7 @@
-/*!
- * Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+// Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
+// Code licensed under the Apache License v2.0.
+// For details, see http://www.apache.org/licenses/LICENSE-2.0.
+
 // Color Palette
 $primary-orange: #f0b67f;
 $primary-white: #f7f7ff;
@@ -37,6 +36,9 @@ $primary-button-color: $primary-orange;
 $primary-button-hover: $hover-orange;
 $button-text-color: $primary-white;
 $text-faded-color: rgba(255, 255, 255, .7);
+
+$calendar-color: $primary-dark-blue;
+$portfolio-overlay: $hover-orange;
 
 $footer-background:$primary-dark-blue;
 $footer-color: $primary-white;
@@ -176,12 +178,12 @@ aside {
           color: #222;
 
           &:hover {
-            color: $primary-orange;
+            color: $navbar-hover-color;
           }
         }
 
         &:hover {
-          color: $primary-orange;
+          color: $navbar-hover-color;
         }
       }
     }
@@ -216,8 +218,8 @@ header {
   color: $primary-white;
   background-image: url("../img/header.jpg");
   background-position: center;
-  -webkit-background-size: cover;
   -moz-background-size: cover;
+  -webkit-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 
@@ -269,18 +271,18 @@ header {
   max-width: 650px;
 
   .portfolio-box-caption {
-    display: block;
-    position: absolute;
+    background: rgba($portfolio-overlay, .9);
     bottom: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
     color: $primary-white;
+    display: block;
+    height: 100%;
     opacity: 0;
-    background: rgba(240, 95, 64, .9);
-    -webkit-transition: all .35s;
+    position: absolute;
+    text-align: center;
     -moz-transition: all .35s;
+    -webkit-transition: all .35s;
     transition: all .35s;
+    width: 100%;
 
     .portfolio-box-caption-content {
       position: absolute;
@@ -656,25 +658,25 @@ img {
 }
 
 #upcoming_events {
-  opacity: 1;
-  color: #222;
-  display: block;
-  position: absolute;
+  background: rgba($calendar-color, .9);
   bottom: 0;
-  width: 100%;
+  color: $calendar-color;
+  display: block;
   height: 100%;
+  opacity: 1;
+  position: absolute;
   text-align: center;
-  background: rgba(34, 34, 34, .9);
+  width: 100%;
 }
 
 #events_table {
   display: block;
-  position: absolute;
-  padding: 0 8px;
   font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1em;
-  text-transform: capitalize;
+  padding: 0 8px;
+  position: absolute;
   text-align: center;
+  text-transform: capitalize;
 
   > table {
     margin: 4px 0;
@@ -806,11 +808,11 @@ img {
         color: $primary-orange;
 
         &:hover {
-          color: #eb3812;
+          color: $navbar-hover-color;
         }
 
         &:focus {
-          color: #eb3812;
+          color: $navbar-focus-color;
         }
       }
     }
@@ -824,12 +826,12 @@ img {
             color: #222;
 
             &:hover {
-              color: $primary-orange;
+              color: $navbar-hover-color;
             }
           }
 
           &:hover {
-            color: $primary-orange;
+            color: $navbar-hover-color;
           }
         }
       }

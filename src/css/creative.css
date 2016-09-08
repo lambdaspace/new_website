@@ -1,8 +1,3 @@
-/*!
- * Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
 html {
   height: 100%;
   width: 100%; }
@@ -100,9 +95,9 @@ aside {
       font-weight: 700;
       color: #222; }
       .navbar-default .nav > li > a:focus:hover {
-        color: #f0b67f; }
+        color: #c06916; }
     .navbar-default .nav > li > a:hover {
-      color: #f0b67f; }
+      color: #c06916; }
   .navbar-default .nav > li.active > a {
     color: #f0b67f !important;
     background-color: transparent; }
@@ -122,8 +117,8 @@ header {
   color: #f7f7ff;
   background-image: url("../img/header.jpg");
   background-position: center;
-  -webkit-background-size: cover;
   -moz-background-size: cover;
+  -webkit-background-size: cover;
   background-size: cover;
   -o-background-size: cover; }
   header .header-content {
@@ -159,18 +154,18 @@ header {
   margin: 0 auto;
   max-width: 650px; }
   .portfolio-box .portfolio-box-caption {
-    display: block;
-    position: absolute;
+    background: rgba(192, 105, 22, 0.9);
     bottom: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
     color: #f7f7ff;
+    display: block;
+    height: 100%;
     opacity: 0;
-    background: rgba(240, 95, 64, 0.9);
-    -webkit-transition: all .35s;
+    position: absolute;
+    text-align: center;
     -moz-transition: all .35s;
-    transition: all .35s; }
+    -webkit-transition: all .35s;
+    transition: all .35s;
+    width: 100%; }
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
       position: absolute;
       top: 50%;
@@ -428,24 +423,24 @@ img::-moz-selection {
   color: #f7f7ff; }
 
 #upcoming_events {
-  opacity: 1;
-  color: #222;
-  display: block;
-  position: absolute;
+  background: rgba(71, 82, 96, 0.9);
   bottom: 0;
-  width: 100%;
+  color: #475260;
+  display: block;
   height: 100%;
+  opacity: 1;
+  position: absolute;
   text-align: center;
-  background: rgba(34, 34, 34, 0.9); }
+  width: 100%; }
 
 #events_table {
   display: block;
-  position: absolute;
-  padding: 0 8px;
   font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1em;
-  text-transform: capitalize;
-  text-align: center; }
+  padding: 0 8px;
+  position: absolute;
+  text-align: center;
+  text-transform: capitalize; }
   #events_table > table {
     margin: 4px 0; }
     #events_table > table > thead > tr > th {
@@ -529,17 +524,17 @@ img::-moz-selection {
       font-size: 14px;
       color: #f0b67f; }
       .navbar-default.affix .navbar-header .navbar-brand:hover {
-        color: #eb3812; }
+        color: #c06916; }
       .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #eb3812; }
+        color: #c06916; }
     .navbar-default.affix .nav > li > a {
       color: #222; }
       .navbar-default.affix .nav > li > a:focus {
         color: #222; }
         .navbar-default.affix .nav > li > a:focus:hover {
-          color: #f0b67f; }
+          color: #c06916; }
       .navbar-default.affix .nav > li > a:hover {
-        color: #f0b67f; }
+        color: #c06916; }
 
   header {
     min-height: 100%; }
