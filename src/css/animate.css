@@ -77,7 +77,7 @@ Copyright (c) 2015 Daniel Eden
 }
 .bounce {
   -webkit-animation: bounce 3s ease;
-  animation: bounce 3s ease
+  animation: bounce 3s ease;
   transform-origin: center bottom
 }
 @-webkit-keyframes flash {
