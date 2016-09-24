@@ -71,7 +71,7 @@ aside {
 .navbar-default {
   border-color: rgba(34, 34, 34, 0.05);
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  background-color: #f7f7ff;
+  background-color: #356d73;
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s; }
@@ -548,7 +548,8 @@ img::-moz-selection {
       header .header-content .header-content-inner {
         margin-right: auto;
         margin-left: auto;
-        max-width: 1000px; }
+        max-width: 1000px;
+        background-color: rgba(71, 82, 96, 0.8); }
         header .header-content .header-content-inner p {
           margin-right: auto;
           margin-left: auto;

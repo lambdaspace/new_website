@@ -24,7 +24,7 @@ $bg-dark-color: $primary-white;
 $bg-primary-backround: $primary-orange;
 $bg-primary-color: $primary-white;
 
-$navbar-background: $primary-white;
+$navbar-background: $hover-light-blue;
 $navbar-color: $primary-orange;
 $navbar-border: rgba(34, 34, 34, .05);
 $navbar-hover-color: $hover-orange;
@@ -235,7 +235,6 @@ header {
         margin-bottom: 0;
         text-transform: uppercase;
         font-weight: 700;
-        background-color: rgba(126,189,195,0.5);
       }
 
       hr {
@@ -854,6 +853,7 @@ img {
         margin-right: auto;
         margin-left: auto;
         max-width: 1000px;
+        background-color: rgba(71,82,96, 0.8);
 
         p {
           margin-right: auto;
