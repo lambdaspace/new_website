@@ -1,50 +1,39 @@
 // Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
 // Code licensed under the Apache License v2.0.
 // For details, see http://www.apache.org/licenses/LICENSE-2.0.
-
 // Color Palette
 $primary-orange: #f0b67f;
 $primary-white: #f7f7ff;
 $primary-beige: #e3e4db;
 $primary-dark-blue: #475260;
 $primary-light-blue: #7ebdc3;
-
-$hover-orange: darken($primary-orange, 30%);
-$hover-light-blue: darken($primary-light-blue, 30%);
-
+$primary-success: #5cb85c;
+$text-footer-white: #ecf2f6;
+$hover-orange: darken($primary-orange, 10);
+$hover-light-blue: darken($primary-light-blue, 10);
 // Html elements
 $link-color: $primary-orange;
 $link-hover-color: $hover-orange;
 $link-focus-color: $hover-orange;
-
 // Css selectors
-
 $bg-dark-backround: $primary-dark-blue;
 $bg-dark-color: $primary-white;
 $bg-primary-backround: $primary-orange;
 $bg-primary-color: $primary-white;
-
 $navbar-background: $hover-light-blue;
 $navbar-color: $primary-orange;
 $navbar-border: rgba(34, 34, 34, .05);
 $navbar-hover-color: $hover-orange;
 $navbar-focus-color: $hover-orange;
-
 $text-primary: $primary-orange;
-
 $primary-button-color: $primary-orange;
 $primary-button-hover: $hover-orange;
 $button-text-color: $primary-white;
 $text-faded-color: rgba(255, 255, 255, .7);
-
 $calendar-color: $primary-dark-blue;
 $portfolio-overlay: $hover-orange;
-
-$footer-background:$primary-dark-blue;
+$footer-background: $primary-dark-blue;
 $footer-color: $primary-white;
-
-
-
 
 html {
   height: 100%;
@@ -235,6 +224,9 @@ header {
         margin-bottom: 0;
         text-transform: uppercase;
         font-weight: 700;
+        padding-top: .5em;
+        padding-left: .2em;
+        padding-right: .2em;
       }
 
       hr {
@@ -271,7 +263,7 @@ header {
   max-width: 650px;
 
   .portfolio-box-caption {
-    background: rgba($portfolio-overlay, .9);
+    background: rgba($portfolio-overlay, .8);
     bottom: 0;
     color: $primary-white;
     display: block;
@@ -526,7 +518,7 @@ fieldset[disabled] {
   &:hover {
     background-color: $primary-button-hover;
     border-color: $primary-button-hover;
-    color: $button-text-color
+    color: $button-text-color;
   }
 
   &:focus {
@@ -883,4 +875,24 @@ img {
   .service-box {
     margin: 20px auto 0;
   }
+}
+
+.mauticform-row {
+  .btn-success {
+    background-color: desaturate($primary-success,20);
+    border-color: #4cae4c;
+    &:hover,
+    &:focus {
+      background-color: darken(desaturate($primary-success,20),10);
+      border-color: #4cae4c;
+    }
+  }
+}
+
+.contact{
+  padding-bottom: 30px;
+}
+
+.footer-text{
+  color: darken($text-footer-white,10);
 }

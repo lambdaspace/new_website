@@ -31,7 +31,7 @@
     $("h1").fitText(
         1.2, {
             minFontSize: '35px',
-            maxFontSize: '65px'
+            maxFontSize: '55px'
         }
     );
 
@@ -173,6 +173,6 @@ $.getJSON('latest.json', function(data){
 // Display contact email
 (function(){
   emailE='gmail.com';
-  emailE=('theTechministry' + '@' + emailE);
+  emailE=('lambdaspce' + '@' + emailE);
   document.getElementById("email").innerHTML = '<A href="mailto:' + emailE + '"target="_blank">' + emailE + '</a>';
 })();
