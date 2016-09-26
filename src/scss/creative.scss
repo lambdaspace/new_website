@@ -750,6 +750,11 @@ img {
 #where {
   cursor: pointer;
 }
+.header-content {
+
+  background-color: rgba(71,82,96,.8);
+
+}
 @media(min-width:768px) {
   .navbar-default {
     border-color: rgba(255, 255, 255, .3);
@@ -834,6 +839,7 @@ img {
     min-height: 100%;
 
     .header-content {
+      background-color: transparent;
       position: absolute;
       top: 50%;
       padding: 0 50px;
