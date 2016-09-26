@@ -3,6 +3,17 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+ var _paq = _paq || [];
+   _paq.push(['trackPageView']);
+   _paq.push(['enableLinkTracking']);
+   (function() {
+   var u="//lambdaspace.piwikpro.com/";
+   _paq.push(['setTrackerUrl', u+'piwik.php']);
+   _paq.push(['setSiteId', 1]);
+   var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+   g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+   })();
+
 
 (function($) {
     "use strict"; // Start of use strict
