@@ -1,0 +1,904 @@
+// Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
+// Code licensed under the Apache License v2.0.
+// For details, see http://www.apache.org/licenses/LICENSE-2.0.
+// Color Palette
+$primary-orange: #f0b67f;
+$primary-white: #f7f7ff;
+$primary-beige: #e3e4db;
+$primary-dark-blue: #475260;
+$primary-light-blue: #7ebdc3;
+$primary-success: #5cb85c;
+$text-footer-white: #ecf2f6;
+$hover-orange: darken($primary-orange, 10);
+$hover-light-blue: darken($primary-light-blue, 10);
+// Html elements
+$link-color: $primary-orange;
+$link-hover-color: $hover-orange;
+$link-focus-color: $hover-orange;
+// Css selectors
+$bg-dark-backround: $primary-dark-blue;
+$bg-dark-color: $primary-white;
+$bg-primary-backround: $primary-orange;
+$bg-primary-color: $primary-white;
+$navbar-background: $hover-light-blue;
+$navbar-color: $primary-orange;
+$navbar-border: rgba(34, 34, 34, .05);
+$navbar-hover-color: $hover-orange;
+$navbar-focus-color: $hover-orange;
+$text-primary: $primary-orange;
+$primary-button-color: $primary-orange;
+$primary-button-hover: $hover-orange;
+$button-text-color: $primary-white;
+$text-faded-color: rgba(255, 255, 255, .7);
+$calendar-color: $primary-dark-blue;
+$portfolio-overlay: $hover-orange;
+$footer-background: $primary-dark-blue;
+$footer-color: $primary-white;
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Merriweather, 'Helvetica Neue', Arial, sans-serif;
+  height: 100%;
+  webkit-tap-highlight-color: #222;
+  width: 100%;
+}
+
+hr {
+  border-color: $primary-orange;
+  border-width: 3px;
+  max-width: 50px;
+}
+
+hr.light {
+  border-color: $primary-white;
+}
+
+a {
+  color: $link-color;
+  -moz-transition: all .35s;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+
+  &:focus {
+    color: $link-focus-color;
+  }
+}
+
+h1 {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+h2 {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+h3 {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+h4 {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+h5 {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.bg-primary {
+  background-color: $bg-primary-backround;
+}
+
+.bg-dark {
+  color: $bg-dark-color;
+  background-color: $bg-dark-backround;
+}
+
+.text-faded {
+  color: $text-faded-color;
+}
+
+section {
+  padding: 100px 0;
+}
+
+aside {
+  padding: 50px 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.navbar-default {
+  border-color: $navbar-border;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  background-color: $navbar-background;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+
+  .navbar-header {
+    .navbar-brand {
+      text-transform: uppercase;
+      font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 700;
+      color: $navbar-color;
+
+      &:hover {
+        color: $navbar-hover-color;
+      }
+
+      &:focus {
+        color: $navbar-focus-color;
+      }
+    }
+  }
+
+  .nav {
+    > li {
+      > a {
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 700;
+        color: #222;
+
+        &:focus {
+          text-transform: uppercase;
+          font-size: 13px;
+          font-weight: 700;
+          color: #222;
+
+          &:hover {
+            color: $navbar-hover-color;
+          }
+        }
+
+        &:hover {
+          color: $navbar-hover-color;
+        }
+      }
+    }
+
+    > li.active {
+      > a {
+        color: $primary-orange !important;
+        background-color: transparent;
+
+        &:focus {
+          color: $primary-orange !important;
+          background-color: transparent;
+
+          &:hover {
+            background-color: transparent;
+          }
+        }
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+header {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  text-align: center;
+  color: $primary-white;
+  background-image: url("../img/header.jpg");
+  background-position: center;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+
+  .header-content {
+    position: relative;
+    width: 100%;
+    padding: 100px 15px;
+    text-align: center;
+
+    .header-content-inner {
+      h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-top: .5em;
+        padding-left: .2em;
+        padding-right: .2em;
+      }
+
+      hr {
+        margin: 30px auto;
+      }
+
+      p {
+        margin-bottom: 50px;
+        font-size: 16px;
+        font-weight: 300;
+        color: rgba(255, 255, 255, .7);
+      }
+    }
+  }
+}
+
+.section-heading {
+  margin-top: 0;
+}
+
+.service-box {
+  margin: 50px auto 0;
+  max-width: 400px;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.portfolio-box {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  max-width: 650px;
+
+  .portfolio-box-caption {
+    background: rgba($portfolio-overlay, .8);
+    bottom: 0;
+    color: $primary-white;
+    display: block;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    -moz-transition: all .35s;
+    -webkit-transition: all .35s;
+    transition: all .35s;
+    width: 100%;
+
+    .portfolio-box-caption-content {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      text-align: center;
+      transform: translateY(-50%);
+
+      .project-category {
+        padding: 0 15px;
+        font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .project-name {
+        padding: 0 15px;
+        font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+        font-size: 18px;
+      }
+    }
+  }
+
+  &:hover {
+    .portfolio-box-caption {
+      opacity: 1;
+    }
+  }
+}
+
+.call-to-action {
+  h2 {
+    margin: 0 auto 20px;
+  }
+}
+
+.text-primary {
+  color: $text-primary;
+}
+
+.no-gutter {
+  > [class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.btn-default {
+  border-color: $primary-white;
+  color: #222;
+  background-color: $primary-white;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+
+  &:hover {
+    border-color: #ededed;
+    color: #222;
+    background-color: #f2f2f2;
+  }
+
+  &:focus {
+    border-color: #ededed;
+    color: #222;
+    background-color: #f2f2f2;
+  }
+
+  &:active {
+    border-color: #ededed;
+    color: #222;
+    background-color: #f2f2f2;
+    background-image: none;
+  }
+
+  .badge {
+    color: $primary-white;
+    background-color: #222;
+  }
+}
+
+.btn-default.focus {
+  border-color: #ededed;
+  color: #222;
+  background-color: #f2f2f2;
+}
+
+.btn-default.active {
+  border-color: #ededed;
+  color: #222;
+  background-color: #f2f2f2;
+  background-image: none;
+}
+
+.open {
+  > .dropdown-toggle.btn-default {
+    border-color: #ededed;
+    color: #222;
+    background-color: #f2f2f2;
+    background-image: none;
+  }
+
+  > .dropdown-toggle.btn-primary {
+    border-color: #ed431f;
+    color: $primary-white;
+    background-color: #ee4b28;
+    background-image: none;
+  }
+}
+
+.btn-default.disabled {
+  border-color: $primary-white;
+  background-color: $primary-white;
+
+  &:hover {
+    border-color: $primary-white;
+    background-color: $primary-white;
+  }
+
+  &:focus {
+    border-color: $primary-white;
+    background-color: $primary-white;
+  }
+
+  &:active {
+    border-color: $primary-white;
+    background-color: $primary-white;
+  }
+}
+
+.btn-default[disabled] {
+  background-color: $primary-white;
+  border-color: $primary-white;
+
+  &:hover {
+    background-color: $primary-white;
+    border-color: $primary-white;
+  }
+
+  &:focus {
+    background-color: $primary-white;
+    border-color: $primary-white;
+  }
+
+  &:active {
+    background-color: $primary-white;
+    border-color: $primary-white;
+  }
+}
+
+fieldset[disabled] {
+  .btn-default {
+    background-color: $primary-white;
+    border-color: $primary-white;
+
+    &:hover {
+      background-color: $primary-white;
+      border-color: $primary-white;
+    }
+
+    &:focus {
+      background-color: $primary-white;
+      border-color: $primary-white;
+    }
+
+    &:active {
+      background-color: $primary-white;
+      border-color: $primary-white;
+    }
+  }
+
+  .btn-default.focus {
+    background-color: $primary-white;
+    border-color: $primary-white;
+  }
+
+  .btn-default.active {
+    background-color: $primary-white;
+    border-color: $primary-white;
+  }
+
+  .btn-primary {
+    background-color: $primary-button-color;
+    border-color: $primary-button-color;
+
+    &:hover {
+      background-color: $primary-button-hover;
+      border-color: $primary-button-hover;
+    }
+
+    &:focus {
+      background-color: $primary-button-hover;
+      border-color: $primary-button-hover;
+    }
+
+    &:active {
+      background-color: $primary-button-hover;
+      border-color: $primary-button-hover;
+    }
+  }
+
+  .btn-primary.focus {
+    background-color: $primary-button-hover;
+    border-color: $primary-button-hover;
+  }
+
+  .btn-primary.active {
+    background-color: $primary-button-hover;
+    border-color: $primary-button-hover;
+  }
+}
+
+.btn-default.disabled.focus {
+  background-color: $primary-white;
+  border-color: $primary-white;
+}
+
+.btn-default[disabled].focus {
+  background-color: $primary-white;
+  border-color: $primary-white;
+}
+
+.btn-default.disabled.active {
+  background-color: $primary-white;
+  border-color: $primary-white;
+}
+
+.btn-default[disabled].active {
+  background-color: $primary-white;
+  border-color: $primary-white;
+}
+
+.btn-primary {
+  background-color: $primary-button-color;
+  border-color: $primary-button-color;
+  color: $button-text-color;
+  -moz-transition: all .35s;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+
+  &:hover {
+    background-color: $primary-button-hover;
+    border-color: $primary-button-hover;
+    color: $button-text-color;
+  }
+
+  &:focus {
+    background-color: $primary-button-hover;
+    border-color: $primary-button-hover;
+    color: $button-text-color;
+  }
+
+  &:active {
+    background-color: $primary-button-hover;
+    background-image: none;
+    border-color: $primary-button-hover;
+    color: $button-text-color;
+  }
+
+  .badge {
+    background-color: $button-text-color;
+    color: $primary-button-color;
+  }
+}
+
+.btn-primary.focus {
+  background-color: $primary-button-hover;
+  border-color: $primary-button-hover;
+  color: $primary-white;
+}
+
+.btn-primary.active {
+  background-color: $primary-button-hover;
+  background-image: none;
+  border-color: $primary-button-hover;
+  color: $primary-white;
+}
+
+.btn-primary.disabled {
+  background-color: $primary-orange;
+  border-color: $primary-orange;
+
+  &:hover {
+    background-color: $primary-orange;
+    border-color: $primary-orange;
+  }
+
+  &:focus {
+    background-color: $primary-orange;
+    border-color: $primary-orange;
+  }
+
+  &:active {
+    background-color: $primary-orange;
+    border-color: $primary-orange;
+  }
+}
+
+.btn-primary[disabled] {
+  background-color: $primary-orange;
+  border-color: $primary-orange;
+
+  &:hover {
+    background-color: $primary-orange;
+    border-color: $primary-orange;
+  }
+
+  &:focus {
+    background-color: $primary-orange;
+    border-color: $primary-orange;
+  }
+
+  &:active {
+    background-color: $primary-orange;
+    border-color: $primary-orange;
+  }
+}
+
+.btn-primary.disabled.focus {
+  background-color: $primary-orange;
+  border-color: $primary-orange;
+}
+
+.btn-primary[disabled].focus {
+  background-color: $primary-orange;
+  border-color: $primary-orange;
+}
+
+.btn-primary.disabled.active {
+  background-color: $primary-orange;
+  border-color: $primary-orange;
+}
+
+.btn-primary[disabled].active {
+  background-color: $primary-orange;
+  border-color: $primary-orange;
+}
+
+.btn {
+  border: 0;
+  border-radius: 300px;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.btn-xl {
+  padding: 15px 30px;
+
+  &::-moz-selection {
+    background: #222;
+    color: $primary-white;
+    text-shadow: none;
+  }
+
+  &::selection {
+    background: #222;
+    color: $primary-white;
+    text-shadow: none;
+  }
+}
+
+img {
+  &::selection {
+    background: 0 0;
+    color: $primary-white;
+  }
+
+  &::-moz-selection {
+    background: 0 0;
+    color: $primary-white;
+  }
+}
+
+#upcoming_events {
+  background: rgba($calendar-color, .9);
+  bottom: 0;
+  color: $calendar-color;
+  display: block;
+  height: 100%;
+  opacity: 1;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+#events_table {
+  display: block;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1em;
+  padding: 0 8px;
+  position: absolute;
+  text-align: center;
+  text-transform: capitalize;
+
+  > table {
+    margin: 4px 0;
+
+    > thead {
+      > tr {
+        > th {
+          text-align: center;
+          font-size: 1em;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}
+
+.progress.active {
+  .progress-bar {
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
+
+.no-bottom-padding {
+  padding-bottom: 0;
+}
+
+#mauticform_input_bepartofit_submit {
+  margin: 12px 0;
+}
+
+#budget-desc {
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+#budget-head {
+  margin-bottom: 18px;
+}
+
+#footer {
+  padding-top: 30px;
+}
+
+.footer {
+  background-color: $footer-background;
+  color: $footer-color;
+}
+
+#status {
+  margin-left: -6px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#creative-commons {
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+#page_top {
+  background: #222;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#mauticform_label_memberssignupform_plhres_onoma {
+  margin-top: 20px;
+}
+
+#make {
+  margin-bottom: 24px;
+}
+
+.clickable-row {
+  cursor: pointer;
+}
+
+#where {
+  cursor: pointer;
+}
+.header-content {
+
+  background-color: rgba(71,82,96,.8);
+
+}
+@media(min-width:768px) {
+  .navbar-default {
+    border-color: rgba(255, 255, 255, .3);
+    background-color: transparent;
+
+    .navbar-header {
+      .navbar-brand {
+        color: rgba(255, 255, 255, .7);
+
+        &:hover {
+          color: $primary-white;
+        }
+
+        &:focus {
+          color: $primary-white;
+        }
+      }
+    }
+
+    .nav {
+      > li {
+        > a {
+          color: rgba(255, 255, 255, .7);
+
+          &:focus {
+            color: rgba(255, 255, 255, .7);
+
+            &:hover {
+              color: $primary-white;
+            }
+          }
+
+          &:hover {
+            color: $primary-white;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-default.affix {
+    border-color: rgba(34, 34, 34, .05);
+    background-color: $primary-white;
+
+    .navbar-header {
+      .navbar-brand {
+        font-size: 14px;
+        color: $primary-orange;
+
+        &:hover {
+          color: $navbar-hover-color;
+        }
+
+        &:focus {
+          color: $navbar-focus-color;
+        }
+      }
+    }
+
+    .nav {
+      > li {
+        > a {
+          color: #222;
+
+          &:focus {
+            color: #222;
+
+            &:hover {
+              color: $navbar-hover-color;
+            }
+          }
+
+          &:hover {
+            color: $navbar-hover-color;
+          }
+        }
+      }
+    }
+  }
+
+  header {
+    min-height: 100%;
+
+    .header-content {
+      background-color: transparent;
+      position: absolute;
+      top: 50%;
+      padding: 0 50px;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+
+      .header-content-inner {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1000px;
+        background-color: rgba(71,82,96, 0.8);
+
+        p {
+          margin-right: auto;
+          margin-left: auto;
+          max-width: 80%;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .portfolio-box {
+    .portfolio-box-caption {
+      .portfolio-box-caption-content {
+        .project-category {
+          font-size: 16px;
+        }
+
+        .project-name {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+@media(min-width:992px) {
+  .service-box {
+    margin: 20px auto 0;
+  }
+}
+
+.mauticform-row {
+  .btn-success {
+    background-color: desaturate($primary-success,20);
+    border-color: #4cae4c;
+    &:hover,
+    &:focus {
+      background-color: darken(desaturate($primary-success,20),10);
+      border-color: #4cae4c;
+    }
+  }
+}
+
+.contact{
+  padding-bottom: 30px;
+}
+
+.footer-text{
+  color: darken($text-footer-white,10);
+}

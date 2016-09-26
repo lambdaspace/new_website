@@ -1,0 +1,71 @@
+.mauticform-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 3px; }
+
+.mauticform-description {
+  margin-bottom: 10px;
+  margin-top: 2px; }
+
+.mauticform-error {
+  color: red;
+  margin-bottom: 10px; }
+
+.mauticform-message {
+  margin-bottom: 10px; }
+
+.mauticform-row {
+  display: block;
+  margin-bottom: 20px; }
+  .mauticform-row .mauticform-required .mauticform-label:after {
+    color: #e32;
+    content: " *";
+    display: inline; }
+
+.mauticform-label {
+  display: block;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 5px; }
+
+.mauticform-helpmessage {
+  display: block;
+  font-size: .9em;
+  margin-bottom: 3px; }
+
+.mauticform-errormsg {
+  color: red;
+  display: block;
+  margin-top: 2px; }
+
+.mauticform-selectbox {
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px #DDD inset;
+  box-sizing: border-box;
+  padding: .2em;
+  width: 50%; }
+
+.mauticform-input {
+  width: 50%;
+  padding: .2em;
+  border: 1px solid #CCC;
+  box-shadow: 0 1px 3px #DDD inset;
+  border-radius: 4px;
+  box-sizing: border-box; }
+
+.mauticform-textarea {
+  width: 50%;
+  padding: .2em;
+  border: 1px solid #CCC;
+  box-shadow: 0 1px 3px #DDD inset;
+  border-radius: 4px;
+  box-sizing: border-box; }
+
+.mauticform-checkboxgrp-label {
+  font-weight: normal; }
+
+.mauticform-radiogrp-label {
+  font-weight: normal; }
+
+/*# sourceMappingURL=mautic.css.map */
