@@ -172,7 +172,7 @@ $.getJSON('latest.json', function(data){
 
 // Display contact email
 (function(){
-  emailE='gmail.com';
-  emailE=('lambdaspce' + '@' + emailE);
+  emailE='lambdaspace.gr';
+  emailE=('info' + '@' + emailE);
   document.getElementById("email").innerHTML = '<A href="mailto:' + emailE + '"target="_blank">' + emailE + '</a>';
 })();
