@@ -1,21 +1,21 @@
-# [TechMinistry](http://www.techministry.rocks/) - New website for Thessaloniki's Hackerspace
+# [LambdaSpace](http://www.lambdaspace.gr/) - New website for Thessaloniki's Hackerspace
 
-## What is the TechMinistry?
+## What is the LambdaSpace?
 
 A **120m^2 space** dedicated to creative software and hardware hacking. Tech communities, meetups and individuals now have their own space in Thessaloniki.
 
-TechMinistry provides a 3D printer, electronics, as well as a fully equipped lab that can help you prototype your idea.
+LambdaSpace provides a 3D printer, electronics, as well as a fully equipped lab that can help you prototype your idea.
 Moreover, you can get in touch with the city's brightest minds; makers, coders, ninjas, engineers, and designers meet here.
 
 The space is maintained thanks to the contributions of our (awesome) members and supporters.
 
 ## Website redesign
 
-The TM website was redesigned in order to increase the visibilty of the hackerspace, as well as to more effectively promote the events and projects that take place on a daily basis at the hackerspace. 
+The LambdaSpace website was redesigned in order to increase the visibilty of the hackerspace, as well as to more effectively promote the events and projects that take place on a daily basis at the hackerspace. 
 
 We used [Creative](http://ironsummitmedia.github.io/startbootstrap-creative/), a template based on the [Bootstrap](http://getbootstrap.com/) front-end framework for modern and mobile responsive web projects.
 
-We have also deployed our own instance of the open source discussion platfom Discource, available [here](http://discourse.techministry.rocks/).
+We have also deployed our own instance of the open source discussion platfom Discource, available [here](http://discourse.lambdaspace.gr/).
 
 ## How to contribute
 
