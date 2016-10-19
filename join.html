@@ -164,12 +164,91 @@
     </aside>
 
 
-  <footer class="footer">
-    <div class="container" id="footer">
-      <a id="creative-commons" href="http://creativecommons.org/licenses/by-sa/4.0/ " target="_blank " class="col-md-4 col-xs-12 text-muted "><i class="fa fa-creative-commons fa-1x "> Creative Commons</i></a>
-      <a class="text-muted col-md-4 col-md-push-6 col-xs-12" href="https://github.com/lambdaspace/new_website">Source Code </a>
+    <footer class="footer">
+      <div class="container" id="footer">
+        <a id="creative-commons" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" class="col-md-4 col-xs-12 footer-text"><i class="fa fa-creative-commons fa-1x"> Creative Commons</i></a>
+        <div class="col-md-4 col-md-push-4">
+          <p class="col-md-4 col-xs-12"><a class="footer-text" data-toggle="modal" data-target="#values" href="#values">Our values </a></p>
+          <p class="col-md-2 col-xs-12"><a class="footer-text" data-toggle="modal" data-target="#faq" href="#faq">FAQ </a></p>
+          <p class="col-md-6 col-xs-12"><a class="footer-text" href="https://github.com/techministry/new_website">Source Code </a></p>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Our values Modal dialogs -->
+    <div class="modal fade" id="values" tabindex="-1" role="dialog" aria-labelledby="values">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">Our Values</h4>
+          </div>
+          <div class="modal-body text-left">
+            <h4 class="text-center">What is a hackerspace?</h4><hr>
+            <p>A hackerspace is a place for creativity, collaboration, research, development and, of course, education. It is more than just a physical space: It is a dynamic community with ideas inspired by the open source philosophy.</p>
+            <h4 class="text-center">The Idea</h4><hr>
+            <p>While our idea stems from free and open source ideas, our primary motivation is our desire to share our experiences with the rest of the world.</p>
+            <p>We want to share our ideas just as we share our code. We are used in sharing our data, problems and solutions remotely from our home or while working. So, why not do it face to face as well?</p>
+            <h4 class="text-center">Values</h4><hr>
+            <h5><strong>Excellence</strong></h5>
+            <p>Be polite to everyone. Respect all people that you meet at the space, as well as the space itself.</p>
+            <h5><strong>Sharing</strong></h5>
+            <p>The main operation of hackerspace is to promote collaboration by sharing projects, code, and ideas. Our motto, inspired by Creative Commons, is <em>"I love to share"</em>.</p>
+            <h5><strong>Consensus</strong></h5>
+            <p>All decisions are the result of consensus among members. Decisions concerning the management of the space are taken during monthly meetings, which are open to all.</p>
+            <h5><strong>Do-ocracy</strong></h5>
+            <p>You do not need a permission to work on a project. If you wish to organize an event or a workshop on an open source or open hardware project, do not expect it to be organized by someone else. Step up and do it!</p>
+            <h4 class="text-center">Financing</h4><hr>
+            <p>The hackerspace is self-funded, with funds provided mostly from its members. If you want to contribute, you can make a Contribution. All financial information is posted on the notice board inside the space.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" href="#contact">Close</button>
+          </div>
+        </div>
+      </div>
     </div>
-  </footer>
+
+    <!-- FAQ Modal dialogs -->
+    <div class="modal fade" id="faq" tabindex="-1" role="dialog" aria-labelledby="faq">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">FAQ</h4>
+          </div>
+          <div class="modal-body text-left">
+            <h4 class="text-center">Visiting the hackerspace?</h4><hr>
+            <p>All presentations and activities that take place in the hackerspace are open to the public. Apart from these occasions, the hackerspace is also open when there is at least one member in the space. You can also be advised if the space is open from the live-status indicator on the top of our page</p>
+            <p>Visitors are welcome to make use of the kitchen, the living room area and the working area, as long as the space is open. The presentation area, the laboratory, as well as any equipment belonging to the hackerspace, can only be accessed and used by the members of the hackerspace.</p>
+            <h4 class="text-center">Who is funding the hackerspace?</h4><hr>
+            <p>The hackerspace relies exclusively on memberships and financial contributions of friends (non-members). All financial information is published in detail on our website. </p>
+            <h4 class="text-center">Why become a member?</h4><hr>
+            <p>As a member you have free access to the space 24 hours a day and 7 days a week. You are free to use whatever the space provides (equipment, tools, consumables).</p>
+            <p>You have the right to organize a presentation or start a project anytime, as long as it does not contradict the principles, objectives, and safety requirements of the hackerspace.</p>
+            <p>Anyone can become a member of the hackerspace and be part of this amazing space/community, simply by following the <em>"become a member button"</em> on our website.</p>
+            <h4 class="text-center">Wish to run a presenation/workshop but not a member?</h4><hr>
+            <p>If you would like to organize a presentation or activity you should first contact a member of the hackerspace. As mentioned earlier, the hackerspace depends solely on memberships and donations. Therefore, each activity organized by a friend should help us cover a percentage of the monthly expenses of the hackerspace, either through financial donations or simply by consuming snacks, soft drinks, coffee, etc. that are provided by the hackerspace.</p>
+            <h4 class="text-center">What does the space feature?</h4><hr>
+              <ul>
+                <li>Fully equipped presentation space with a capacity of 60 seated people.</li>
+                <li>Workspaces: 35 individual workspaces, 2 workbenches for heavier work.</li>
+                <li>Fully equipped workshop/lab with three workbenches, a 3D printer, a drill, 6x Arduino boards, electronic parts (sensors, motors etc), 2x Raspberry Pi, 2x Banani Pi, 8x LCD TFT monitors, networking equipment and more.</li>
+                <li>Fully equipped kitchen.</li>
+                <li>Coffee, snacks, and refreshments.</li>
+                <li>Exchange library with over 50 books and magazines.</li>
+              </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" href="#contact">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <!-- jQuery -->
   <script src="src/js/jquery.js "></script>
