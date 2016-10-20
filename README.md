@@ -49,6 +49,7 @@ This project is *already* configured with a `package.json` and a `Gulpfile`, so 
 
 * Open your terminal and navigate to the project's folder.
 * Run `npm install` to install project dependencies.
+* Run `bower install` to install front-end dependencies.
  
 **Before making any changes run `gulp` on your terminal**.
 
