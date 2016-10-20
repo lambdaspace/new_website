@@ -45,11 +45,11 @@ A typical Grunt project setup will involve adding two files to your project: `pa
 
 ### Working with an existing Grunt project
 
-This project is *already* configured with a `package.json` and a `Gruntfile`, so assuming that the Grunt CLI has been installed successfully:
+This project is *already* configured with a `package.json` and a `Gulpfile`, so assuming that the Gulp has been installed successfully:
 
 * Open your terminal and navigate to the project's folder.
 * Run `npm install` to install project dependencies.
  
-**Before making any changes run `grunt` on your terminal**.
+**Before making any changes run `gulp` on your terminal**.
 
 
