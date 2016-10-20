@@ -6,7 +6,7 @@ var browserSync = require('browser-sync').create();
 // Config Object.
 var config = {
     assetsDir: './src',
-    sassPattern: 'sass/**/*.scss',
+    sassPattern: 'scss/**/*.scss',
     production: !!plugins.util.env.production,
     sourceMaps: !plugins.util.env.production
 };
@@ -53,6 +53,9 @@ gulp.task('scripts', function() {
     return app.addScript([
         config.assetsDir+'/components/jquery/dist/jquery.min.js',
         config.assetsDir+'/components/bootstrap/dist/js/bootstrap.min.js',
+        config.assetsDir+'/components/wow/dist/wow.min.js',
+        config.assetsDir+'/components/df-visible/jquery.visible.min.js',
+        config.assetsDir+'/components/FitText.js/jquery.fittext.js',
         config.assetsDir+'/js/**/*.js'
     ], 'scripts.min.js');
 });

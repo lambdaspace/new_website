@@ -6754,4 +6754,16 @@ button.close {
     display: none !important;
   }
 }
-/*# sourceMappingURL=bootstrap.css.map */
+
+@media (min-width: 992px){
+  .col-md-push-1 {
+    left: 8.33333333%;
+  }
+}
+
+@media (min-width: 992px){
+  .col-md-4 {
+    float: left;
+    width: 33.33333333%;
+  }
+}

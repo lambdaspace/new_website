@@ -1,0 +1,27 @@
+.btn{
+  margin-bottom: 12px;
+}
+
+@media (min-width: 992px){
+  .col-md-push-1 {
+    left: 8.33333333%;
+  }
+}
+
+@media (min-width: 992px){
+  .col-md-4 {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+
+.form-control {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-right: 12px;
+}
+
+.mauticform-row .btn-success {
+  background-color: #73a173;
+  border-color: #4cae4c;
+}
