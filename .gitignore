@@ -26,6 +26,7 @@ build/Release
 # Dependency directory
 # https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
 node_modules
+src/components
 
 # Optional npm cache directory
 .npm
@@ -39,3 +40,6 @@ hackers.txt
 
 # PHPStorm
 .idea/
+
+# Generated code
+dist

@@ -8,14 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/techministry/new_website.git"
+    "url": "git://github.com/alexdor/new_website.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/techministry/new_website/issues"
+    "url": "git://github.com/alexdor/new_website.git"
   },
-  "homepage": "https://github.com/techministry/new_website#readme",
   "devDependencies": {
     "browser-sync": "^2.15.0",
     "gulp": "^3.9.1",
