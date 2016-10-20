@@ -1,0 +1,21 @@
+{
+  "name": "new_website",
+  "description": "New landing page for Thessaloniki's hackerspace",
+  "main": "index.js",
+  "authors": [
+    "Achilles Kaloeridis <achilleas90gr@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/AchillesKal/new_website",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.7"
+  }
+}

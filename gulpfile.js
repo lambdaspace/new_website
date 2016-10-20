@@ -43,23 +43,18 @@ app.copy = function(srcFiles, outputDir) {
 // Sass styles task. Not used yet.
 gulp.task('styles', function() {
     return app.addStyle([
-        config.assetsDir+'/sass/styles.scss'
-    ], 'styles.min.css');
+        config.assetsDir+'/components/bootstrap/dist/css/bootstrap.min.css',
+        config.assetsDir+'/scss/**/*.scss'
+    ], 'style.min.css');
 });
 
 // Scripts task.
 gulp.task('scripts', function() {
     return app.addScript([
+        config.assetsDir+'/components/jquery/dist/jquery.min.js',
+        config.assetsDir+'/components/bootstrap/dist/js/bootstrap.min.js',
         config.assetsDir+'/js/**/*.js'
     ], 'scripts.min.js');
-});
-
-// Css task. Will be replaced in the future.
-gulp.task('css', function() {
-    return gulp.src('./src/css/**/*.css')
-        .pipe(plugins.concat('style.min.css'))
-        .pipe(config.production ? plugins.cleanCss({compatibility: 'ie8'}) : plugins.util.noop())
-        .pipe(gulp.dest('dist/css'));
 });
 
 // Task for fonts
@@ -102,10 +97,10 @@ gulp.task('browser-sync', function() {
 // Watch task. Watches for changes.
 gulp.task('watch', function() {
     gulp.watch(config.assetsDir+'/'+config.sassPattern, ['styles']);
-    gulp.watch(config.assetsDir+'/css/**/*.css', ['css']);
+    //gulp.watch(config.assetsDir+'/css/**/*.css', ['css']);
     gulp.watch(config.assetsDir+'/js/**/*.js', ['scripts']);
     gulp.watch("*.html").on('change', browserSync.reload);
 });
 
 // Defautl task.
-gulp.task('default', ['html', 'css', 'scripts', 'images', 'favicons', 'browser-sync', 'watch']);
+gulp.task('default', ['html','styles', 'scripts', 'images', 'favicons', 'browser-sync', 'watch']);
