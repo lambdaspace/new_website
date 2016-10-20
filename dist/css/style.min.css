@@ -9542,4 +9542,16 @@ img::-moz-selection {
   background-color: #73a173;
   border-color: #4cae4c; }
 
+@media (min-width: 768px) {
+  .navbar-default {
+    border-color: rgba(255, 255, 255, 0.3);
+    background-color: transparent; } }
+
+@media (min-width: 992px) {
+  .col-md-offset-3 {
+    margin-left: 25%; }
+  .col-md-6 {
+    float: left;
+    width: 50%; } }
+
 /*# sourceMappingURL=style.min.css.map */

@@ -6,7 +6,7 @@ var browserSync = require('browser-sync').create();
 // Config Object.
 var config = {
     assetsDir: './src',
-    sassPattern: 'scss/**/*.scss',
+    sassPattern: 'scss/*.scss',
     production: !!plugins.util.env.production,
     sourceMaps: !plugins.util.env.production
 };
@@ -100,10 +100,9 @@ gulp.task('browser-sync', function() {
 // Watch task. Watches for changes.
 gulp.task('watch', function() {
     gulp.watch(config.assetsDir+'/'+config.sassPattern, ['styles']);
-    //gulp.watch(config.assetsDir+'/css/**/*.css', ['css']);
     gulp.watch(config.assetsDir+'/js/**/*.js', ['scripts']);
     gulp.watch("*.html").on('change', browserSync.reload);
 });
 
 // Defautl task.
-gulp.task('default', ['html','styles', 'scripts', 'images', 'favicons', 'browser-sync', 'watch']);
+gulp.task('default', ['html', 'styles', 'scripts', 'images', 'favicons', 'browser-sync', 'watch']);
