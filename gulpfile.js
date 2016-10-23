@@ -90,11 +90,13 @@ gulp.task('favicons', function() {
 
 // Static server
 gulp.task('browser-sync', function() {
+  if (!config.production) {
     browserSync.init({
-        server: {
-            baseDir: "./"
-        }
+      server: {
+        baseDir: "./"
+      }
     });
+  }
 });
 
 // Watch task. Watches for changes.
