@@ -1,22 +1,8 @@
 {
   "name": "new_website",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "New landing page for Thessaloniki's hackerspace",
-  "main": "index.html",
-  "directories": {
-    "example": "examples"
-  },
-  "dependencies": {
-    "grunt": "~0.4.5",
-    "grunt-contrib-cssmin": "~0.14.0"
-  },
-  "devDependencies": {
-    "grunt-concurrent": "~2.1.0",
-    "grunt-contrib-cssmin": "0.6.1",
-    "grunt-contrib-imagemin": "~1.0.0",
-    "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "~0.6.1"
-  },
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,6 +13,21 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alexdor/new_website/issues"
-  }
+    "url": "git://github.com/alexdor/new_website.git"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.15.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-concat": "^2.6.0",
+    "gulp-if": "^2.0.1",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-load-plugins": "^1.3.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7"
+  },
+  "dependencies": {}
 }
