@@ -44,7 +44,8 @@ app.copy = function(srcFiles, outputDir) {
 gulp.task('styles', function() {
     return app.addStyle([
         config.assetsDir+'/components/bootstrap/dist/css/bootstrap.min.css',
-        config.assetsDir+'/scss/**/*.scss'
+        config.assetsDir+'/scss/**/*.scss',
+        config.assetsDir+'/components/font-awesome/css/font-awesome.min.css',
     ], 'style.min.css');
 });
 
@@ -70,10 +71,7 @@ gulp.task('html', function() {
 
 // Task for fonts
 gulp.task('fonts', function() {
-    return app.copy(
-        //config.bowerDir+'/font-awesome/fonts/*',
-        'dist/fonts'
-    );
+    return app.copy(config.assetsDir+'/components/font-awesome/fonts/**', 'dist/fonts');
 });
 
 // Images optimization.
@@ -107,4 +105,4 @@ gulp.task('watch', function() {
 });
 
 // Defautl task.
-gulp.task('default', ['html', 'styles', 'scripts', 'images', 'favicons', 'browser-sync', 'watch']);
+gulp.task('default', ['html', 'styles', 'scripts', 'images', 'favicons', 'browser-sync', 'watch', 'fonts']);
