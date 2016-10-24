@@ -19,6 +19,7 @@
     "bootstrap": "~3.3.7",
     "wow": "wowjs#~1.1.2",
     "df-visible": "~1.2.0",
-    "FitText.js": "jquery-fittext#~1.2.0"
+    "FitText.js": "jquery-fittext#~1.2.0",
+    "font-awesome": "^4.6.3"
   }
 }
