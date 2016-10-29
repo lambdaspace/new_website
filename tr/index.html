@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta property="og:title" content="LambdaSpace" />
+  <meta property="og:site_name" content="LambdaSpace" />
+  <meta property="og:description" content="Tanışmak, öğrenmek, yapmak ve paylaşmak için açık bir alan." />
+  <meta property="og:url" content="https://lambdaspace.gr" />
+  <meta property="og:image" content="https://farm2.staticflickr.com/1704/24363300715_f2c3e48e30_z_d.jpg" />
+
+  <title>Lambda Space</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/dist/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/dist/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/dist/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/dist/favicons/manifest.json">
+  <link rel="mask-icon" href="/dist/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/dist/favicons/favicon.ico">
+  <meta name="msapplication-config" content="/dist/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#7ebdc3">
+
+  <link rel="stylesheet" href="dist/css/style.min.css" type="text/css">
+
+  <!-- Custom Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top">LambdaSpace</a>
+        <a class="navbar-brand " id="status"></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a class="page-scroll" href="#about">Hakkında</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#join">Katıl</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#portfolio">Aktiviteler</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#how">Nasıl</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#contact">İletişim</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <header>
+    <div class="header-content">
+      <div class="header-content-inner">
+        <h1>Tanışmak, öğrenmek, yapmak ve paylaşmak için açık bir alan.</h1>
+        <hr>
+        <p class="header_text">120m<sup>2</sup>'lik bir alan yaratıcı yazılımlar ve donanım hack'leri için ayrıldı. Teknoloji toplulukları, buluşmalar ve bireyler artık Thessaloniki'de kendi mekanlarına sahip.<br><a data-toggle="modal" data-target="#manifesto" href="#manifesto">Lambdaspace önceden TechMinistry idi.</a></p>
+        <a href="#where" class="btn btn-primary btn-xl page-scroll animated bounce">Daha Fazla Bilgi</a>
+      </div>
+    </div>
+  </header>
+
+  <aside class="bg-dark" id="where">
+    <div class="container text-center call-to-action">
+      <h2>Nerede</h2>
+      <i class="fa fa-4x fa-map-marker directions"></i>
+      <p class="directions">
+        <br>Ionos Dragoumi 39 - 6th floor
+        <br>Thessaloniki, 546 30, Yunanistan.</p>
+    </div>
+  </aside>
+
+  <section id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading" id="about">Ne yapmak gerekir?</h2>
+          <hr class="primary">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box">
+            <i class="fa fa-4x fa-code wow bounceIn text-primary" aria-hidden="true"></i>
+            <h3>Öğren</h3>
+            <p class="text-muted">Yeni teknolojilerin haftalık sunumları ve atölyeleri ile sürekli aktif kal.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box" id="make">
+            <i class="fa fa-4x fa-gears wow bounceIn text-primary" data-wow-delay=".1s" aria-hidden="true"></i>
+            <h3>Oluştur</h3>
+            <p class="text-muted">3 boyutlu yazıcı, elektronik malzemeler ve tam ekipmanlı laboratuarlar fikrini hayata geçirmende sana yardımcı olur.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box">
+            <i class="fa fa-4x fa-connectdevelop  wow bounceIn text-primary" data-wow-delay=".2s" aria-hidden="true"></i>
+            <h3>Bağlan</h3>
+            <p class="text-muted">Maker'lar, coder'lar, ninjalar, mühendisler ve tasarımcılar burada buluşuyor. Şehrin parlak fikirleriyle iletişim kur.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box">
+            <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s" aria-hidden="true"></i>
+            <h3>Destekle</h3>
+            <p class="text-muted">Bu mekan, üyelerin katkıları ve destekçiler sayesinde varlığını sürdürmektedir.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <aside class="bg-primary no-bottom-padding" id="join">
+    <div class="container text-center">
+      <div class="call-to-action">
+        <h2>Üye ol</h2>
+        <div class="row">
+          <p class="text-center col-md-8 col-md-offset-2">Mekanın tüm özelliklerinden faydalan. Kendi projeni başlat, sunum yap, mevcut tüm ekipmanları kullan ve bu muhteşem teknoloji topluluğunun bir parçası ol.</p>
+        </div>
+        <div class="row">
+          <a href="join.html" class="btn btn-default btn-xl tada page-scroll">üye ol</a>
+        </div>
+        <hr class="light">
+        <h2>Yine de olmadı mı?</h2>
+        <p>O halde yaklaşan etkinliklere, atölyelere ve projelere göz at.</p>
+        <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+      </div>
+    </div>
+        <a class="btn btn-primary btn-lg btn-default page-scroll" href="#portfolio">
+          <i class="fa fa-arrow-circle-down fa-3x animated bounce wow" style="visibility: visible; animation-name: bounce;" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </aside>
+  <section class="bg-dark no-padding" id="portfolio">
+    <div class="container-fluid">
+      <div class="row no-gutter">
+        <div class="col-lg-4 col-sm-6">
+          <div class="portfolio-box">
+            <img src="dist/img/portfolio/1.jpg" class="img-responsive" alt="">
+            <div id="upcoming_events" class="portfolio-box-caption">
+              <div id="events_table" class="portfolio-box-caption-content project-category text-faded">
+                  <table class="table table-condensed">
+                    <thead>
+                      <tr>
+                        <th>Tarih</th>
+                        <th>Saat</th>
+                        <th>Açıklama</th>
+                      </tr>
+                    </thead>
+                    <tbody id="eventsTableThread">
+                    </tbody>
+                  </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a href="http://discourse.techministry.rocks/c/events" class="portfolio-box">
+            <img src="dist/img/portfolio/2.jpg" class="img-responsive" alt="">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">
+                  Atölyeler
+                </div>
+                <div class="project-name">
+                  İlk web uygulamanı yap
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a href="http://discourse.techministry.rocks/c/projects" class="portfolio-box">
+            <img src="dist/img/portfolio/3.jpg" class="img-responsive" alt="">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">
+                  Projeler
+                </div>
+                <div class="project-name">
+                  Akıllı Ev
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a href="http://discourse.techministry.rocks/c/projects" class="portfolio-box">
+            <img src="dist/img/portfolio/4.jpg" class="img-responsive" alt="">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">
+                  Projeler
+                </div>
+                <div class="project-name">
+                  Quadcopter
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a href="http://discourse.techministry.rocks/c/events" class="portfolio-box">
+            <img src="dist/img/portfolio/5.jpg" class="img-responsive" alt="">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">
+                  Atölyeler
+                </div>
+                <div class="project-name">
+                  Web Geliştirme 2. Kısım
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a href="http://discourse.techministry.rocks/c/projects" class="portfolio-box">
+            <img src="dist/img/portfolio/6.jpg" class="img-responsive" alt="">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">
+                  Projeler
+                </div>
+                <div class="project-name">
+                  WebVR
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <aside class="bg-dark" id="how">
+    <div class="container text-center">
+      <div class="call-to-action">
+        <h2>Nasıl?</h2>
+        <hr class="light">
+        <p>Bu mekan, üye aidatları ve destekçilerimizin finansal katkıları sayesinde varlığını sürdürmektedir.</p>
+      </div>
+      <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <p><b>Üyeler</b></p>
+        <table class="table table-condensed">
+          <thead>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="http://achilleskal.com">AchillesKal</a></td>
+              <td><a href="https://github.com/alexdor">Alexandros Dorodoulis</a></td>
+              <td>Andreas Bourakis</td>
+            </tr>
+            <tr>
+              <td>Adrian</td>
+              <td>AEtherC0r3</td>
+              <td>Billakos</td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/bacharakis/">Christos Bacharakis</a></td>
+              <td>George Gkounis</td>
+              <td>John Beredimas</td>
+            </tr>
+            <tr>
+              <td>Warlordfff</td>
+              <td><a href="https://twitter.com/kostask_">kostask</a></td>
+              <td>Nikolaos Loukidis</td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/panagiks/">Panagiotis Kolokotronis</a></td>
+              <td>Petros Freris</td>
+              <td>Stamatis Dampoudis</td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/smavros">Stefanos Mavros</a></td>
+              <td><a href="http://asteriosmr.com">Stergios Marias</a></td>
+              <td>Former awesome members</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+      <div class="row">
+      <a href="#" class="btn btn-primary btn-xl tada" data-toggle="modal" data-target="#donate">Bağış yap</a>
+    </div>
+    </div>
+  </aside>
+
+  <div class="modal fade" id="donate" tabindex="-1" role="dialog" aria-labelledby="donate">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Kapat">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Bağış yap</h4>
+        </div>
+        <div class="modal-body text-left">
+          <ul>
+            <li>
+              <p>Paypal kullanarak doğrudan bağış yapabilirsiniz:</p>
+              <div class="text-center">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+              </div>
+            </li>
+            <br>
+            <li>
+              <p>Araçlar ve ekipmanlar için lütfen ilgili formu iletişim bilgilerinizle doldurun. Size detaylı bilgilerle dönüş yapacağız.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal" href="#contact">Kapat</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2 class="section-heading">Bir parçası ol!</h2>
+          <hr class="primary">
+          <div id="mauticform_wrapper_bepartofit" class="mauticform_wrapper">
+            <form autocomplete="false" role="form" method="post" action="https://techministry.mautic.com/form/submit?formId=1" id="mauticform_bepartofit" data-mautic-form="bepartofit">
+              <div class="mauticform-error" id="mauticform_bepartofit_error"></div>
+
+                <div class="mauticform-message text-muted" id="mauticform_bepartofit_message">Haftalık bültenimize abone ol!</div>
+                <div class="mauticform-innerform">
+
+                  <div id="mauticform_bepartofit_name" class="mauticform-row mauticform-text">
+                    <input id="mauticform_input_bepartofit_name" placeholder="Tam isminizi girin..." name="mauticform[name]" value="" class="col-md-4 col-xs-12 col-md-push-1 required form-control type1" type="text" />
+                    <span class="mauticform-errormsg" style="display: none;"></span>
+                  </div>
+
+                  <div id="mauticform_bepartofit_email" data-validate="email" data-validation-type="email" class="mauticform-row mauticform-email mauticform-required">
+                    <input id="mauticform_input_bepartofit_email" placeholder="E-post adresinizi girin..." name="mauticform[email]" value="" class="col-md-4 col-md-push-1 col-xs-12 required form-control type2" type="email" />
+                  </div>
+
+                  <div id="mauticform_bepartofit_submit" class="mauticform-row mauticform-button-wrapper">
+                    <button type="submit" id="mauticform_input_bepartofit_submit" name="mauticform[submit]" class="btn btn-success col-md-1 col-md-push-1 col-xs-4 col-xs-push-4" value="1">Gönder</button>
+                  </div>
+
+                  <input type="hidden" name="mauticform[formId]" id="mauticform_bepartofit_id" value="1" />
+                  <input type="hidden" name="mauticform[return]" id="mauticform_bepartofit_return" value="" />
+                  <input type="hidden" name="mauticform[formName]" id="mauticform_bepartofit_name" value="bepartofit" />
+
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <h2 class="section">Bizimle irtibata geçin</h2>
+        <hr class="primary">
+        <div class="col-md-4 text-center">
+          <i class="fa fa-comment-o fa-3x wow bounceIn" aria-hidden="true"></i>
+          <p><a href="https://chat.lambdaspace.gr/signup_user_complete/?id=acw5f9gqpira3kqner6hxf5wtc" target="_blank">Online topluluğumuza katıl</a></p>
+        </div>
+        <div class="col-md-4 text-center">
+          <i class="fa fa-phone fa-3x wow bounceIn"></i>
+          <p><a href="tel:+302315551918" target="_blank">0030 231 555 1918</a></p>
+        </div>
+        <div class="col-md-4 text-center">
+          <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s" aria-hidden="true"></i>
+          <p id="email">Lütfen e-postaları görmek için Javascript'i etkinleştirin.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <div class="col-md-6 text-center">
+          <i class="fa fa-twitter fa-3x wow bounceIn" data-wow-delay=".1s" aria-hidden="true"></i>
+          <p><a href="https://twitter.com/lambdaspace" target="_blank">@LambdaSpace</a></p>
+        </div>
+        <div class="col-md-6 text-center">
+          <i class="fa fa-facebook-official fa-3x wow bounceIn" data-wow-delay=".1s" aria-hidden="true"></i>
+          <p><a href="https://www.facebook.com/lambdaspace" target="_blank">/LambdaSpace</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <footer class="footer">
+    <div class="container" id="footer">
+      <a id="creative-commons" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" class="col-md-4 col-xs-12 footer-text"><i class="fa fa-creative-commons fa-1x"> Creative Commons</i></a>
+      <div class="col-md-4 col-md-push-4">
+        <p class="col-md-4 col-xs-12"><a class="footer-text" data-toggle="modal" data-target="#values" href="#values">Değerlerimiz </a></p>
+        <p class="col-md-2 col-xs-12"><a class="footer-text" data-toggle="modal" data-target="#faq" href="#faq">SSS </a></p>
+        <p class="col-md-6 col-xs-12"><a class="footer-text" href="https://github.com/techministry/new_website">Kaynak Kodu </a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Our values Modal dialogs -->
+  <div class="modal fade" id="values" tabindex="-1" role="dialog" aria-labelledby="values">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Kapat">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title">Değerlerimiz</h4>
+        </div>
+        <div class="modal-body text-left">
+          <h4 class="text-center">Hackerspace nedir?</h4><hr>
+          <p>Hackerspace, yaratıcılık, birlikte çalışma, araştırma, geliştirme ve pek tabii eğitim için kullanılan bir alandır. Fiziksel bir mekandan çok daha fazlası: özgür yazılım felsefesinin verdiği fikirlerle donatılmış dinamik bir topluluk alanıdır.</p>
+          <h4 class="text-center">Fikir</h4><hr>
+          <p>Fikirlerimiz özgür yazılım felsefesinden geldiği sürece, birincil motivasyonumuz tecrübelerimizi dünyanın geri kalanıyla paylaşma arzusudur.</p>
+          <p>Kaynak kodlarımızı paylaştığımız gibi fikirlerimizi de paylaşmak istiyoruz. Evden veya çalışırken problemlerimizi ve çözümlerimizi uzaktan paylaştık. Neden yüzyüze de paylaşmayalım?</p>
+          <h4 class="text-center">Değerler</h4><hr>
+          <h5><strong>Mükemmellik</strong></h5>
+          <p>Herkese karşı kibar ol. Mekanın kendine yaptığı gibi mekanda tanıştığın herkese saygı duy.</p>
+          <h5><strong>Paylaşma</strong></h5>
+          <p>Hackerspace'in ana amacı; projeleri, kodlar ve fikirleri paylaşarak birlikte çalışmayı desteklemektir. Creative Commons'tan esinlenen mottomuz: <em>"Paylaşmayı seviyorum"</em>.</p>
+          <h5><strong>Fikir Birliği</strong></h5>
+          <p>Tüm kararlar üyelerin fikir birliği sonucu alınmaktadır. Kararlar, mekan yönetiminin herkese açık aylık toplantılarıyla ilişkilidir.</p>
+          <h5><strong>Yap-okrasi</strong></h5>
+          <p>Bir proje üzerinde çalışmak için herhangi bir izin almanıza gerek yok. Özgür donanım üzerine bir etkinlik organize etmek veya atöyle düzenlemek isterseniz, başkalarından bunu yapmasını beklemeyin. Harekete geçin ve siz yapın!</p>
+          <h4 class="text-center">Finansman</h4><hr>
+          <p>Hackerspace'ler, çoğunlukla üyelerin aylık aidatları ile kendi ödeneğini kendi çıkaran yerlerdir. Siz de katkı yapabilirsiniz. Tüm finansman bilgisi, mekanda tahtada yer almaktadır.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal" href="#contact">Kapat</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ Modal dialogs -->
+  <div class="modal fade" id="faq" tabindex="-1" role="dialog" aria-labelledby="faq">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Kapat">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title">FAQ</h4>
+        </div>
+        <div class="modal-body text-left">
+          <h4 class="text-center">Hackerspace'i ziyaret edebilir miyiz?</h4><hr>
+          <p>Mekanda gerçekleştirilen tüm sunumlar ve etkinlikler herkese açıktır. Bu fırsatlardan ayrı olarak, mekanda en az bir üye varken de hackerspace herkese açıktır. Ayrıca mekanın açık olup olmadığını, web sitemizin üstünde yer alan anlık durum bildirgecinden öğrenebilirsiniz.</p>
+          <p>Mekan açık olduğu sürece mutfağımız, oturma odamız ve çalışma alanımız ziyarete açıktır. Sunum alanı, laboratuar ve hackerspace'e ait tüm ekipmanlar yalnızca üyelerin kullanımına açıktır.</p>
+          <h4 class="text-center">Hackerspace'in mali desteği kim tarafından karşılanıyor?</h4><hr>
+          <p>Hackerspace özellikle üyeliğe ve üyelerin üye olmayan arkadaşlarının finansal desteğine güvenir. Tüm finansal bilgiler, detaylarıyla web sitemizde yayınlanır. </p>
+          <h4 class="text-center">Neden üye olmalıyım?</h4><hr>
+          <p>Üye olarak mekana 7 gün 24 saat erişiminiz olur. Mekanın sağladığı her şeyi (ekipmanları, araçları ve tüketim maddelerini) ücretsiz olarak kullanabilirsiniz.</p>
+          <p>Mekanın prensipleriyle, hedefleriyle ve güvenlik istekleriyle çelişmediği sürece istediğiniz zaman bir sunum organize edebilir ya da bir proje başlatabilirsiniz.</p>
+          <p>Web sitemizde yer alan <em>"Üye ol tuşu"</em> ile isteyen herkes bu muhteşem mekanın/topluluğun bir parçası olmak üzere üye olabilir.</p>
+          <h4 class="text-center">Sunum veya atölye yapmak istiyorum ama üye değilim?</h4><hr>
+          <p>Bir sunum ya da bir etkinlik organize etmek istiyorsanız öncelikle hackerspace'in bir üyesi ile iletişime geçmelisiniz. Daha önce belirtildiği gibi hackerspace yalnızca üyelik ve bağışlarla varlığını sürdürür. Bu yüzden arkadaşlar tarafından gerçekleştirilen her bir etkinlik, aylık harcamalarımızı karşılamamıza yardımcı olmalıdır. Bunlar maddi bağışlar olabileceği gibi atıştırmalık, içecek, kahve vb. gibi şeyler sağlayarak da olabilir.</p>
+          <h4 class="text-center">Mekan özellikleri nelerdir?</h4><hr>
+            <ul>
+              <li>60 kişiyi kaldırabilecek tam ekipmanlı bir sunum alanı.</li>
+              <li>Atölyeler: bireysel çalışma için 35 kişilik alan, ağır işler için ise 2 tezgah.</li>
+              <li>Tam ekipmanlı, 3 tezgahlı atöyle/laboratuar alanı, bir 3 boyutlu yazıcı, bir matkap, 6 Arduino, elektronik malzemeler (sensörler, motorlar, vb.), 2 Raspberry Pi, 2 Banani Pi, 8 LCD TFT monitör, ağ ekipmanları ve daha fazlası.</li>
+              <li>Tam donanımlı mutfak.</li>
+              <li>Kahve, atıştırmalıklar ve serinletici şeyler.</li>
+              <li>50+ kitap ve dergili takas kütüphanesi.</li>
+            </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal" href="#contact">Kapat</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- manifesto Modal dialogs -->
+  <div class="modal fade" id="manifesto" tabindex="-1" role="dialog" aria-labelledby="manifesto">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Kapat">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4>Ξέρω τι έκανες φέτος το καλοκαίρι</h4>
+        </div>
+        <div class="modal-body text-left">
+          <h4 class="text-center">Το Tech Ministry, το hackerspace της Θεσσαλονίκης, αλλάζει όνομα και πλέον λέγεται Lambda Space.</h4>
+          <hr>
+          <p>Λόγο αφέλειας και εμπιστοσύνης που δείξαμε σε μέλος που αποχώρησε από το χώρο, καταλήξαμε να χάσουμε την κυριότητα του domain Techministry.gr αλλά και όλων των προφίλ μας στα κοινωνικά δίκτυα.</p>
+
+<p>Σας παρακαλούμε να αγνοήσετε οποιαδήποτε ανάρτηση από τους συγκεκριμένους λογαριασμούς καθώς γίνεται προσπάθεια οικειοποίησης των κόπων και προσπαθειών των πραγματικών μελών του χώρου.</p>
+
+<p>Οι άνθρωποι που ξεκίνησαν την προσπάθεια του TechMinistry πριν 1μιση χρόνο καθώς και όλα τα ενεργά μέλη βρισκόμαστε ακόμη στην Ίωνος Δραγούμη 39. Και αυτό γιατί κανείς δε μπορεί να διαγράψει ένα χώρο, μια προσπάθεια και τη δυναμική του.</p>
+
+<p>Μαθαίνουμε από τα λάθη μας και γυρίζουμε σελίδα αλλάζοντας το όνομα μας σε Lambda Space ή απλά λ-space. Αγκαλιάζουμε το λ ως σταθερά που χρησιμοποιείται σε διάφορους τομείς της επιστήμης, αλλά και το λ ως Θεσσαλλλονικιό ιδίωμα. Ορίζουμε το λ ως την σταθερά στον χώρο της τεχνολογίας και του δημιουργικού hacking στην πόλη.</p>
+
+<p>Καλωσήλθατε στο λ-space.</p>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal" href="#contact">Kapat</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="dist/js/scripts.min.js"></script>
+
+  <!-- Custom Theme JavaScript -->
+  <script src="src/js/creative.js"></script>
+
+</body>
+
+</html>
