@@ -112,20 +112,20 @@ $.get('hackers.txt',function (data){
 
 /** This section is only needed once per page if manually copying **/
 if (typeof MauticSDKLoaded == 'undefined') {
-    var MauticSDKLoaded = true;
-    var head            = document.getElementsByTagName('head')[0];
-    var script          = document.createElement('script');
-    script.type         = 'text/javascript';
-    script.src          = 'https://techministry.mautic.com/mautic/media/js/mautic-form.js';
-    script.onload       = function() {
-        MauticSDK.onLoad();
-    };
-    head.appendChild(script);
-    var MauticDomain = 'https://techministry.mautic.com';
-    var MauticLang   = {
-        'submittingMessage': "Please wait..."
-    };
-}
+       var MauticSDKLoaded = true;
+       var head            = document.getElementsByTagName('head')[0];
+       var script          = document.createElement('script');
+       script.type         = 'text/javascript';
+       script.src          = 'https://techministry.mautic.net/mautic/media/js/mautic-form.js';
+       script.onload       = function() {
+           MauticSDK.onLoad();
+       };
+       head.appendChild(script);
+       var MauticDomain = 'https://techministry.mautic.net';
+       var MauticLang   = {
+           'submittingMessage': "Please wait..."
+       }
+   }
 
 // Parse events from discourse
 function eventParser(topic) {
@@ -175,7 +175,7 @@ $.getJSON('latest.json', function(data){
   });
 
   for (var i = 0; i < 4 && i < futureEvents.length; i++) {
-    futureEvents[i].link = 'https://discourse.techministry.rocks/t/' + futureEvents[i].slug + '/' + futureEvents[i].id;
+    futureEvents[i].link = 'https://community.lambdaspace.gr/t/' + futureEvents[i].slug + '/' + futureEvents[i].id;
     eventsTableThread.append('<tr class="clickable-row" data-url="' + futureEvents[i].link +  '"><td>' + futureEvents[i].day + '</td><td>' + futureEvents[i].time +
       '</td><td>' + futureEvents[i].title + '</td></tr>');
   }
