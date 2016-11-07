@@ -175,7 +175,7 @@ $.getJSON('latest.json', function(data){
   });
 
   for (var i = 0; i < 4 && i < futureEvents.length; i++) {
-    futureEvents[i].link = 'https://discourse.techministry.rocks/t/' + futureEvents[i].slug + '/' + futureEvents[i].id;
+    futureEvents[i].link = 'https://community.lambdaspace.gr/t/' + futureEvents[i].slug + '/' + futureEvents[i].id;
     eventsTableThread.append('<tr class="clickable-row" data-url="' + futureEvents[i].link +  '"><td>' + futureEvents[i].day + '</td><td>' + futureEvents[i].time +
       '</td><td>' + futureEvents[i].title + '</td></tr>');
   }
