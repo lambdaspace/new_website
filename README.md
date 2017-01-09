@@ -15,11 +15,11 @@ The LambdaSpace website was redesigned in order to increase the visibilty of the
 
 We used [Creative](http://ironsummitmedia.github.io/startbootstrap-creative/), a template based on the [Bootstrap](http://getbootstrap.com/) front-end framework for modern and mobile responsive web projects.
 
-We have also deployed our own instance of the open source discussion platfom Discource, available [here](http://discourse.lambdaspace.gr/).
+We have also deployed our own instance of the open source discussion platfom Discource, available [here](https://community.lambdaspace.gr/).
 
 ## How to contribute
 
-Anyone is welcome to contribute to the development and enhancement of the TM website.
+Anyone is welcome to contribute to the development and enhancement of LambdaSpace's website.
 
 Keep in mind that in order to make changes in the website's CSS, js, and images, you will need to install **Gulp** first. If that is the case, you are advised to follow these steps:
 
