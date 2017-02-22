@@ -127,6 +127,7 @@ if (typeof MauticSDKLoaded == 'undefined') {
        }
    }
 
+
 // Parse events from discourse
 function eventParser(topic) {
   var event = {};
