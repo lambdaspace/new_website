@@ -89,7 +89,7 @@ $(window).scroll(function() {
 });
 
 $('#where').click(function() {
-  window.location = "https://goo.gl/maps/ALLuccDqMqo";
+  window.location = "https://goo.gl/maps/njKDBywKnhy";
 });
 
 // Add space status
