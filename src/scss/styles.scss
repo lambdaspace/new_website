@@ -2,6 +2,10 @@
   margin-bottom: 12px;
 }
 
+#upcoming_events h2{
+  color: #CCCCCC;
+}
+
 @media (min-width: 992px){
   .col-md-push-1 {
     left: 8.33333333%;
@@ -29,7 +33,7 @@
 @media (min-width: 768px){
   .navbar-default {
     border-color: rgba(255,255,255,.3);
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
 
