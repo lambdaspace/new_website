@@ -45,7 +45,7 @@ gulp.task('styles', function() {
     return app.addStyle([
         './node_modules/bootstrap/dist/css/bootstrap.min.css',
         config.assetsDir+'/scss/**/*.scss',
-        './node_modules/fontawesome/css/font-awesome.min.css',
+        './node_modules/font-awesome/css/font-awesome.min.css',
     ], 'style.min.css');
 });
 
@@ -71,7 +71,7 @@ gulp.task('html', function() {
 
 // Task for fonts
 gulp.task('fonts', function() {
-    return app.copy(config.assetsDir+'/components/font-awesome/fonts/**', 'dist/fonts');
+    return app.copy('./node_modules/font-awesome/fonts/**', 'dist/fonts');
 });
 
 // Images optimization.
