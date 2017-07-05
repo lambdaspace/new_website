@@ -19,7 +19,7 @@ app.addStyle = function(paths, outputFilename) {
         .pipe(plugins.if(config.sourceMaps, plugins.sourcemaps.init()))
         .pipe(plugins.sass())
         .pipe(plugins.concat(outputFilename))
-        .pipe(config.production ? plugins.cleanCss() : plugins.util.noop())
+        .pipe(plugins.cleanCss())
         .pipe(plugins.if(config.sourceMaps, plugins.sourcemaps.write('.')))
         .pipe(gulp.dest('dist/css'));
 };
@@ -29,7 +29,7 @@ app.addScript = function(paths, outputFilename) {
         .pipe(plugins.plumber())
         .pipe(plugins.if(config.sourceMaps, plugins.sourcemaps.init()))
         .pipe(plugins.concat(outputFilename))
-        .pipe(config.production ? plugins.uglify() : plugins.util.noop())
+        .pipe(plugins.uglify())
         .pipe(plugins.if(config.sourceMaps, plugins.sourcemaps.write('.')))
         .pipe(gulp.dest('dist/js'));
 };
@@ -88,20 +88,22 @@ gulp.task('favicons', function() {
 
 // Static server
 gulp.task('browser-sync', function() {
-  if (!config.production) {
+  !config.production ? (
     browserSync.init({
       server: {
         baseDir: "./"
       }
-    });
-  }
+    })
+  ) : plugins.util.noop()
 });
 
 // Watch task. Watches for changes.
 gulp.task('watch', function() {
-    gulp.watch(config.assetsDir+'/'+config.sassPattern, ['styles']);
-    gulp.watch(config.assetsDir+'/js/**/*.js', ['scripts']);
-    gulp.watch("*.html").on('change', browserSync.reload);
+    if (!config.production) {
+      gulp.watch(config.assetsDir+'/'+config.sassPattern, ['styles'])
+      gulp.watch(config.assetsDir+'/js/**/*.js', ['scripts'])
+      gulp.watch("*.html").on('change', browserSync.reload)
+   }
 });
 
 // Defautl task.
