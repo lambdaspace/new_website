@@ -43,20 +43,20 @@ app.copy = function(srcFiles, outputDir) {
 // Sass styles task. Not used yet.
 gulp.task('styles', function() {
     return app.addStyle([
-        config.assetsDir+'/components/bootstrap/dist/css/bootstrap.min.css',
+        './node_modules/bootstrap/dist/css/bootstrap.min.css',
         config.assetsDir+'/scss/**/*.scss',
-        config.assetsDir+'/components/font-awesome/css/font-awesome.min.css',
+        './node_modules/font-awesome/css/font-awesome.min.css',
     ], 'style.min.css');
 });
 
 // Scripts task.
 gulp.task('scripts', function() {
     return app.addScript([
-        config.assetsDir+'/components/jquery/dist/jquery.min.js',
-        config.assetsDir+'/components/bootstrap/dist/js/bootstrap.min.js',
-        config.assetsDir+'/components/wow/dist/wow.min.js',
-        config.assetsDir+'/components/df-visible/jquery.visible.min.js',
-        config.assetsDir+'/components/FitText.js/jquery.fittext.js',
+        './node_modules/jquery/dist/jquery.min.js',
+        './node_modules/bootstrap/dist/js/bootstrap.min.js',
+        './node_modules/wowjs/dist/wow.min.js',
+        './node_modules/jquery-visible/jquery.visible.min.js',
+        './node_modules/fittext.js/jquery.fittext.js',
         config.assetsDir+'/js/**/*.js'
     ], 'scripts.min.js');
 });
@@ -71,7 +71,7 @@ gulp.task('html', function() {
 
 // Task for fonts
 gulp.task('fonts', function() {
-    return app.copy(config.assetsDir+'/components/font-awesome/fonts/**', 'dist/fonts');
+    return app.copy('./node_modules/font-awesome/fonts/**', 'dist/fonts');
 });
 
 // Images optimization.
@@ -107,4 +107,4 @@ gulp.task('watch', function() {
 });
 
 // Defautl task.
-gulp.task('default', ['html', 'styles', 'scripts', 'images', 'favicons', 'browser-sync', 'watch', 'fonts']);
+gulp.task('default', ['html', 'styles', 'scripts', 'images', 'favicons', 'fonts', 'browser-sync', 'watch']);

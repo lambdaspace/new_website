@@ -48,7 +48,6 @@ A typical Gulp project setup will involve adding two files to your project: `pac
 This project is *already* configured with a `package.json` and a `Gulpfile`, so assuming that the Gulp has been installed successfully:
 
 * Open your terminal and navigate to the project's folder.
-* Run `npm install` to install project dependencies.
-* Run `bower install` to install front-end dependencies.
+* Run `yarn install` to install project dependencies.
 
 **Before making any changes run `gulp` on your terminal**.
