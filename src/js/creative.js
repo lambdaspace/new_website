@@ -149,7 +149,7 @@ function eventParser(topic) {
 }
 
 // Populate the events table thread
-$.getJSON('latest.json', function(data){
+$.getJSON('https://community.lambdaspace.gr/c/5/l/latest.json', function(data){
   var eventsTableThread = $('#eventsTableThread');
   var futureEvents = [];
 
