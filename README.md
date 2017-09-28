@@ -2,7 +2,7 @@
 
 ## What is the LambdaSpace?
 
-A **120m^2 space** dedicated to creative software and hardware hacking. Tech communities, meetups and individuals now have their own space in Thessaloniki.
+A **120m<sup>2</sup> space** dedicated to creative software and hardware hacking. Tech communities, meetups and individuals now have their own space in Thessaloniki.
 
 LambdaSpace provides a 3D printer, electronics, as well as a fully equipped lab that can help you prototype your idea.
 Moreover, you can get in touch with the city's brightest minds; makers, coders, ninjas, engineers, and designers meet here.
