@@ -30,7 +30,7 @@
     "gulp-util": "^3.0.7"
   },
   "dependencies": {
-    "bootstrap": "~3.3.7",
+    "bootstrap": "~4.0.0",
     "fittext.js": "^1.2.0",
     "font-awesome": "^4.6.3",
     "fontawesome": "^4.7.2",
