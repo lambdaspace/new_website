@@ -399,4 +399,7 @@ function initMap() {
   google.maps.event.addDomListener(marker, "click", function() {
     window.location.href = "https://goo.gl/maps/njKDBywKnhy";
   });
+  $(window).on('load',function(){
+    $('#movingout').modal('show');
+});
 }
