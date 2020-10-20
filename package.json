@@ -26,7 +26,7 @@
     "fittext.js": "^1.2.0",
     "font-awesome": "^4.6.3",
     "fontawesome": "^4.7.2",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-clean-css": "^3.5.0",
     "gulp-concat": "^2.6.0",
     "gulp-if": "^2.0.1",
